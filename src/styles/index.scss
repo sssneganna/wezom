@@ -1,0 +1,53 @@
+:root {
+  --header-bg: #ffffff;
+  --footer-height: 60px;
+  --header-height: 150px;
+  --page-width: 1522px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.global-main {
+  background: linear-gradient(180deg, #219653 1%, #ffffff 99%);
+  min-height: calc(100vh - 60px - 150px);
+  padding-top: 30px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --page-width: 620px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    --page-width: 350px;
+  }
+}

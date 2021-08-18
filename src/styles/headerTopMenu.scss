@@ -1,0 +1,157 @@
+.header-top-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 19px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+
+  &_icon {
+    margin-right: 277px;
+    height: 40px;
+  }
+  &_list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &_item {
+    margin-right: 25px;
+  }
+  &_link::after {
+    content: "";
+    background: #dde8f0;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  &_link.active::after {
+    display: none;
+  }
+  &_link.active {
+    border-bottom: 1px solid #586a7c;
+    opacity: 1;
+  }
+
+  &_link:hover {
+    opacity: 1;
+  }
+  &_link {
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #33485d;
+    border-bottom: 1px solid white;
+    padding: 4px 0;
+    opacity: 0.8;
+  }
+}
+.info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &_list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+  }
+
+  &_item {
+    display: flex;
+  }
+
+  &_phone,
+  &_btn-logIn,
+  &_btn,
+  &_btn-language {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #33485d;
+  }
+  &_btn-logIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_phone {
+    text-decoration: none;
+  }
+
+  &_phone:hover,
+  &_btn-language:hover,
+  &_btn-logIn:hover {
+    opacity: 0.8;
+  }
+
+  &_btn-logIn:active {
+    opacity: 0.8;
+  }
+  &_btn,
+  &_btn-logIn {
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+  &_btn-language {
+    position: relative;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  &_btn-language::before {
+    display: none;
+  }
+  &_btn-language.active::before {
+    content: "";
+    background: #dde8f0;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-top-menu {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .menu {
+    margin-bottom: 20px;
+    &_icon {
+      margin-right: 30px;
+    }
+  }
+
+  
+}
+@media screen and (max-width: 375px) {
+  .header-top-menu {
+    display: none;
+  }
+}

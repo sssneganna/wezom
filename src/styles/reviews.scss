@@ -1,0 +1,125 @@
+.reviews-section {
+  width: 100%;
+  margin: 93px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  &_title {
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #33485d;
+  }
+
+  &_number {
+    color: #219653;
+  }
+
+  &_reviews-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 120%;
+    color: #33485d;
+    font-weight: 500;
+    padding: 4px 0 4px 0;
+    border-bottom: 1px solid #c3c5c5;
+  }
+  &_reviews-link:hover {
+    opacity: 0.8;
+  }
+  &_reviews-btn {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: none;
+  }
+
+  &_reviews-btn::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-bottom: 2px solid #5c6d7d;
+    border-right: 2px solid #5c6d7d;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    z-index: 1;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+.rew {
+  width: 100%;
+}
+.reviews {
+  &_content {
+    display: none;
+    border-bottom: 1px solid #dde8f0;
+    padding-bottom: 34px;
+    list-style: none;
+    padding-right: 30px;
+    padding-top: 29px;
+  }
+
+  &_name-flex {
+    display: flex;
+    align-items: center;
+  }
+  &_name {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 200%;
+    color: #33485d;
+    margin-right: 5px;
+  }
+
+  &_date {
+    font-size: 16px;
+    line-height: 200%;
+    font-weight: 400;
+    color: #33485d;
+    margin-right: 18px;
+  }
+  &_description {
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #5c6d7d;
+    margin-top: 11px;
+    margin-bottom: 34px;
+  }
+
+  &_btn-showmore {
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    color: #5c6d7d;
+    font-size: 13px;
+    line-height: 120%;
+    outline: none;
+    border: 1px solid #ffa800;
+    border-radius: 10px 0 10px 0;
+    width: 147px;
+    height: 40px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .reviews-section {
+    &_reviews-link {
+      display: none;
+    }
+    &_reviews-btn {
+      display: none;
+    }
+  }
+}

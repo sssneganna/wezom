@@ -1,0 +1,194 @@
+.buy-section {
+  width: 100%;
+  margin-top: 64px;
+}
+
+.buy-card {
+  width: 100%;
+  border: 1px solid #dde8f0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-bottom: 26px;
+
+  &__info {
+    display: flex;
+  }
+
+  &__sale {
+    width: 110px;
+    background: #eb5757;
+
+    padding: 5px;
+    font-size: 24px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+
+  &__discount {
+    width: 478px;
+    background: #fdeeee;
+
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #eb5757;
+  }
+
+  &__price {
+    display: flex;
+    padding: 39px 21px 39px 21px;
+    align-items: center;
+  }
+
+  &__new-price {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    color: #eb5757;
+    margin-right: 24px;
+  }
+
+  &__old-price {
+    font-size: 16px;
+    line-height: 120%;
+    color: #33485d;
+    opacity: 0.5;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__btn-basket {
+    outline: none;
+    border: 1px solid #219653;
+    width: 226px;
+    height: 60px;
+    background: #219653;
+    font-size: 24px;
+    line-height: 120%;
+    color: #ffffff;
+    padding: 15px 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__btn-basket:hover,
+  &__btn-basket:active {
+    background: #47b39c;
+  }
+
+  &_buttons-phone {
+    padding: 13px 46px 13px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #ffcb6d;
+    height: 60px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    width: 167px;
+    margin-left: 8px;
+  }
+  &_buttons-phone:hover,
+  &_buttons-phone:active {
+    border: 2px solid #47b39c;
+  }
+
+  &_buttons-text {
+    margin-left: 13px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #5c6d7d;
+  }
+}
+
+.bue-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+
+  &_flex {
+    display: flex;
+    align-items: center;
+  }
+  &_in-stock {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    margin-right: 22px;
+    text-align: right;
+
+    color: #249755;
+  }
+
+  &_number {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    border-bottom: 1px solid #dde8f0;
+    color: #33485d;
+    margin-left: 8px;
+  }
+  &_vendor-code {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #5c6d7d;
+  }
+
+  &_vendor-code-bold {
+    font-weight: 600;
+  }
+}
+.basket-box_btn-favorites:nth-last-of-type(2) {
+  border-right: 2px solid #ffcb6d;
+}
+
+@media screen and (max-width: 375px) {
+  .bue-info {
+    display: none;
+  }
+
+  .buy-card {
+    &__sale {
+      width: 50px;
+
+      font-size: 14px;
+    }
+    &__new-price {
+      font-size: 20px;
+    }
+
+    &__old-price {
+      font-size: 14px;
+    }
+
+    &__btn-basket {
+      width: 100px;
+
+      font-size: 14px;
+    }
+
+    &_buttons-phone {
+      width: 100px;
+    }
+  }
+  .basket-box-icon-shop-white,
+  .basket-box-icon-phone {
+    display: none;
+  }
+}

@@ -1,0 +1,70 @@
+.characteristic-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 153px;
+  margin-top: 110px;
+
+  &_title {
+    font-size: 30px;
+    line-height: 120%;
+    color: #33485d;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+
+  &_list {
+    width: 350px;
+    margin-bottom: 15px;
+  }
+
+  &_item {
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 187%;
+  }
+
+  &_item:after {
+    content: "...................................................................................................";
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #dde8f0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &_name {
+    color: #33485d;
+    margin-right: 10px;
+    font-weight: 500;
+  }
+
+  &_text {
+    margin-left: 10px;
+    font-weight: 400;
+    color: #5c6d7d;
+  }
+  &_item span:first-of-type {
+    float: left;
+  }
+  &_item span:last-of-type {
+    float: right;
+  }
+}
+.green {
+  color: #219653;
+}
+@media screen and (max-width: 768px) {
+  .characteristic-section {
+    margin-top: 350px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .characteristic-section {
+    &_list {
+      width: 100%;
+    }
+  }
+}

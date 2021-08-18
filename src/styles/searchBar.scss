@@ -1,0 +1,35 @@
+.form-search {
+  &_field {
+    background: #dde8f0;
+    border-radius: 10px;
+    width: 774px;
+    height: 50px;
+    background: #dde8f0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px 16px 19px;
+  }
+
+  &_input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #33485d;
+    opacity: 0.7;
+    font-size: 16px;
+  }
+
+  &_btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-search {
+    display: none;
+  }
+}

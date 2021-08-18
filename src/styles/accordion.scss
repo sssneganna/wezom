@@ -1,0 +1,62 @@
+.accordion {
+  width: 100%;
+  margin-bottom: 93px;
+
+  &_item {
+    border-top: 1px solid #dde8f0;
+  }
+
+  &_item:last-of-type {
+    border-bottom: 1px solid #dde8f0;
+  }
+
+  &_item.active .accordion_content {
+    display: block;
+  }
+
+  &_header {
+    padding: 30px 10px 28px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  &_header:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-bottom: 2px solid #5c6d7d;
+    border-right: 2px solid #5c6d7d;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  &_icon {
+    margin-right: 15px;
+  }
+
+  &_title {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #5c6d7d;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  &_title:hover,
+  &_title:active {
+    opacity: 0.8;
+  }
+  &_content {
+    display: none;
+    padding: 15px;
+    font-size: 14px;
+    color: #5c6d7d;
+    font-weight: 300;
+    font-style: italic;
+  }
+}

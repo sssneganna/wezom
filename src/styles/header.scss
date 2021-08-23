@@ -1,5 +1,5 @@
 .global-header {
-  background-color: var(--header-bg);
+  background-color: var(--white-bg);
   height: var(--header-height);
   width: 100%;
 }
@@ -15,18 +15,22 @@
   margin-bottom: 30px;
   justify-content: space-between;
 }
+
 @media screen and (max-width: 768px) {
   .global-header {
     height: 180px;
   }
+
   .header-content {
     max-width: 620px;
   }
 }
+
 @media screen and (max-width: 375px) {
   .global-header {
     height: 60px;
   }
+
   .header-content {
     max-width: 375px;
   }

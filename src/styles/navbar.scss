@@ -24,17 +24,18 @@
     letter-spacing: 1px;
     top: -5px;
     position: absolute;
-    color: #ffffff;
+    color: var(--color-text-white);
   }
+
   &_category-link {
     position: absolute;
     right: 25px;
     top: 20px;
-    color: #ffffff;
+    color: var(--color-text-white);
     font-size: 14px;
     line-height: 24px;
     text-decoration: none;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--color-text-white);
     padding-bottom: 4px;
   }
 
@@ -42,13 +43,14 @@
   &_title:hover {
     opacity: 0.8;
   }
+
   &_list {
     position: absolute;
     top: 60px;
     left: 0;
     z-index: 100;
     padding: 5px;
-    background: white;
+    background: var(--white-bg);
     box-shadow: 5px 5px 5px #e5e5e5;
     height: 569px;
     width: 100%;
@@ -57,7 +59,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
     transition: transform 0.3s;
     transform-origin: top;
     transform: scaleY(0);
@@ -81,30 +82,31 @@
     padding-top: 6px;
     padding-bottom: 6px;
     margin-bottom: 6px;
-    color: #5c6d7d;
+    color: var(--color-blue-smoke);
   }
+
   &_link::before {
     content: "";
     display: block;
     width: 9px;
     height: 9px;
-    border-bottom: 2px solid #33485d;
-    border-right: 2px solid #33485d;
+    border-bottom: 2px solid var(--colot-text);
+    border-right: 2px solid var(--colot-text);
     position: absolute;
     top: 50%;
     right: 22px;
     z-index: 200;
     transform: translateY(-50%) rotate(-45deg);
-
     opacity: 0.5;
   }
 
   &_link:hover {
     background-color: #dde8f0;
     transition: background-color 0.4s ease 0s;
-    color: #33485d;
+    color: var(--colot-text);
     border-radius: 10px;
   }
+
   &_link:hover::before {
     opacity: 1;
   }
@@ -138,10 +140,12 @@
     border-radius: 0%;
     margin-right: 0;
   }
+
   .global-nav {
     &_title {
       display: none;
     }
+
     &_category-link {
       display: none;
     }

@@ -1,8 +1,9 @@
 .main-page {
-  background: #ffffff;
+  background: var(--white-bg);
   max-width: var(--page-width);
   margin: 0 auto;
 }
+
 .main-section {
   display: flex;
   justify-content: space-between;
@@ -23,6 +24,7 @@
   .main-section {
     flex-direction: column;
     padding: 20px;
+
     &_left {
       width: 100%;
     }

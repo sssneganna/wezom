@@ -14,6 +14,7 @@
     top: 5px;
     right: 5px;
   }
+
   &_btn-comparison,
   &_btn-favorites,
   &_btn-basket {
@@ -24,30 +25,34 @@
     cursor: pointer;
     background: transparent;
   }
+
   &_btn-comparison,
   &_btn-favorites {
     border-right: none;
   }
+
   &_btn-basket {
     border-radius: 0 10px 0 0;
     position: relative;
   }
+
   &_btn-comparison:hover,
   &_btn-favorites:hover,
   &_btn-basket:hover {
     border: 2px solid #47b39c;
   }
+
   &_btn-basket:active {
     background: #47b39c;
     border: 2px solid #47b39c;
   }
 
   &_btn-basket:active .basket-box-icon-shop {
-    fill: #ffffff;
+    fill: var(--color-text-white);
   }
 
   &_btn-basket:active &_btn-number {
-    background: #ffffff;
+    background: var(--color-text-white);
   }
 
   &_btn-comparison:active,
@@ -57,16 +62,17 @@
   }
 
   &_btn-favorites:active .basket-box-icon-favorites {
-    fill: #ffffff;
+    fill: var(--color-text-white);
   }
 
   &_btn-comparison:active .basket-box-icon-comparison {
-    fill: #ffffff;
+    fill:  var(--color-text-white);
   }
 
   &_window-open {
     position: relative;
   }
+
   &_window {
     position: relative;
     display: none;
@@ -76,8 +82,7 @@
     height: 280px;
     right: 0px;
     top: 82px;
-
-    background: #ffffff;
+    background: var(--white-bg);
     padding: 34px 30px;
     box-shadow: 0px 10px 80px rgba(0, 52, 41, 0.3);
     border-radius: 20px;
@@ -88,7 +93,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    background: #ffffff;
+    background: var(--white-bg);
     border-radius: 5px 0 0 0;
     position: absolute;
     top: -15px;
@@ -96,6 +101,7 @@
     z-index: 1;
     transform: translateX(-50%) rotate(45deg);
   }
+
   &_window_opened {
     display: block;
   }
@@ -104,13 +110,14 @@
     width: 189px;
     font-size: 18px;
     line-height: 21px;
-
-    color: #5c6d7d;
+    color: var(--color-blue-smoke);
     margin-bottom: 28px;
   }
+
   &_window-text-bold {
     font-weight: 700;
   }
+
   &_window-btn {
     background: #47b39c;
     border-radius: 20px 0 20px 0;
@@ -123,7 +130,7 @@
     font-size: 24px;
     line-height: 120%;
     margin-bottom: 30px;
-    color: #ffffff;
+    color: var(--color-text-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +149,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 120%;
-    color: #33485d;
+    color: var(--colot-text);
     text-decoration: none;
     padding: 3px 0;
     cursor: pointer;

@@ -9,7 +9,7 @@
   box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
-  background: #ffffff;
+  background: var(--white-bg);
   margin-bottom: 26px;
 
   &__info {
@@ -19,20 +19,18 @@
   &__sale {
     width: 110px;
     background: #eb5757;
-
     padding: 5px;
     font-size: 24px;
     line-height: 120%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: var(--color-text-white);
   }
 
   &__discount {
     width: 478px;
     background: #fdeeee;
-
     font-size: 16px;
     line-height: 120%;
     display: flex;
@@ -58,7 +56,7 @@
   &__old-price {
     font-size: 16px;
     line-height: 120%;
-    color: #33485d;
+    color: var(--colot-text);
     opacity: 0.5;
   }
 
@@ -68,13 +66,13 @@
 
   &__btn-basket {
     outline: none;
-    border: 1px solid #219653;
+    border: 1px solid var(--green-color);
     width: 226px;
     height: 60px;
-    background: #219653;
+    background: var(--green-color);
     font-size: 24px;
     line-height: 120%;
-    color: #ffffff;
+    color: var(--color-text-white);
     padding: 15px 21px;
     display: flex;
     justify-content: space-between;
@@ -86,6 +84,7 @@
   &__btn-basket:hover,
   &__btn-basket:active {
     background: #47b39c;
+    border: 1px solid #47b39c;
   }
 
   &_buttons-phone {
@@ -101,6 +100,7 @@
     width: 167px;
     margin-left: 8px;
   }
+
   &_buttons-phone:hover,
   &_buttons-phone:active {
     border: 2px solid #47b39c;
@@ -111,7 +111,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 120%;
-    color: #5c6d7d;
+    color: var(--color-blue-smoke);
   }
 }
 
@@ -124,13 +124,13 @@
     display: flex;
     align-items: center;
   }
+
   &_in-stock {
     font-weight: 500;
     font-size: 16px;
     line-height: 120%;
     margin-right: 22px;
     text-align: right;
-
     color: #249755;
   }
 
@@ -139,15 +139,15 @@
     font-size: 14px;
     line-height: 120%;
     border-bottom: 1px solid #dde8f0;
-    color: #33485d;
+    color: var(--colot-text);
     margin-left: 8px;
   }
+
   &_vendor-code {
     font-weight: 500;
     font-size: 14px;
     line-height: 120%;
-
-    color: #5c6d7d;
+    color: var(--color-blue-smoke);
   }
 
   &_vendor-code-bold {
@@ -166,9 +166,9 @@
   .buy-card {
     &__sale {
       width: 50px;
-
       font-size: 14px;
     }
+
     &__new-price {
       font-size: 20px;
     }
@@ -187,6 +187,7 @@
       width: 100px;
     }
   }
+
   .basket-box-icon-shop-white,
   .basket-box-icon-phone {
     display: none;

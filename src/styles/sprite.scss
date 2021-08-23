@@ -1,8 +1,9 @@
 .searchIcon {
   width: 18px;
   height: 18px;
-  fill: #33485d;
+  fill: var(--colot-text);
 }
+
 .wezom_logo {
   width: 114px;
   height: 41px;
@@ -30,22 +31,22 @@
 .basket-box-icon-comparison,
 .basket-box-icon-favorites,
 .basket-box-icon-shop {
-  fill: #33485d;
+  fill: var(--colot-text);
 }
 
 .basket-box-icon-shop:active,
 .basket-box-icon-shop:focus {
-  fill: #ffffff;
+  fill: var(--color-text-white);
 }
 .basket-box-icon-comparison:active {
-  fill: #ffffff;
+  fill: var(--color-text-white);
 }
 .basket-box-icon-favorites:active {
-  fill: #ffffff;
+  fill: var(--color-text-white);
 }
 
 .basket-box-icon-shop-white {
-  fill: #ffffff;
+  fill: var(--color-text-white);
 }
 .inStock {
   width: 18.75px;

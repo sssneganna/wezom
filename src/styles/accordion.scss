@@ -20,13 +20,14 @@
     display: flex;
     align-items: center;
   }
+
   &_header:after {
     content: "";
     display: block;
     width: 5px;
     height: 5px;
-    border-bottom: 2px solid #5c6d7d;
-    border-right: 2px solid #5c6d7d;
+    border-bottom: 2px solid var(--color-blue-smoke);
+    border-right: 2px solid var(--color-blue-smoke);
     position: absolute;
     top: 50%;
     right: 0;
@@ -43,19 +44,21 @@
     border: none;
     background: transparent;
     cursor: pointer;
-    color: #5c6d7d;
+    color: var(--color-blue-smoke);
     font-weight: bold;
     font-size: 16px;
   }
+
   &_title:hover,
   &_title:active {
     opacity: 0.8;
   }
+
   &_content {
     display: none;
     padding: 15px;
     font-size: 14px;
-    color: #5c6d7d;
+    color: var(--color-blue-smoke);
     font-weight: 300;
     font-style: italic;
   }

@@ -9,7 +9,7 @@
   &_title {
     font-size: 30px;
     line-height: 120%;
-    color: #33485d;
+    color:  var(--colot-text);
     font-weight: 400;
     margin-bottom: 32px;
   }
@@ -34,8 +34,9 @@
     white-space: nowrap;
     overflow: hidden;
   }
+
   &_name {
-    color: #33485d;
+    color:  var(--colot-text);
     margin-right: 10px;
     font-weight: 500;
   }
@@ -43,8 +44,9 @@
   &_text {
     margin-left: 10px;
     font-weight: 400;
-    color: #5c6d7d;
+    color: var(--color-blue-smoke);
   }
+
   &_item span:first-of-type {
     float: left;
   }
@@ -53,7 +55,7 @@
   }
 }
 .green {
-  color: #219653;
+  color: var(--green-color);
 }
 @media screen and (max-width: 768px) {
   .characteristic-section {

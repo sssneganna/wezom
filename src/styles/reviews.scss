@@ -11,29 +11,32 @@
     width: 100%;
     align-items: center;
   }
+
   &_title {
     font-size: 30px;
     line-height: 120%;
     font-weight: 400;
-    color: #33485d;
+    color: var(--colot-text);
   }
 
   &_number {
-    color: #219653;
+    color: var(--green-color);
   }
 
   &_reviews-link {
     text-decoration: none;
     font-size: 16px;
     line-height: 120%;
-    color: #33485d;
+    color: var(--colot-text);
     font-weight: 500;
     padding: 4px 0 4px 0;
     border-bottom: 1px solid #c3c5c5;
   }
+
   &_reviews-link:hover {
     opacity: 0.8;
   }
+
   &_reviews-btn {
     position: relative;
     cursor: pointer;
@@ -47,8 +50,8 @@
     display: block;
     width: 5px;
     height: 5px;
-    border-bottom: 2px solid #5c6d7d;
-    border-right: 2px solid #5c6d7d;
+    border-bottom: 2px solid var(--color-blue-smoke);
+    border-right: 2px solid var(--color-blue-smoke);
     position: absolute;
     top: -5px;
     right: 0;
@@ -60,6 +63,7 @@
 .rew {
   width: 100%;
 }
+
 .reviews {
   &_content {
     display: none;
@@ -74,11 +78,12 @@
     display: flex;
     align-items: center;
   }
+
   &_name {
     font-size: 16px;
     font-weight: bold;
     line-height: 200%;
-    color: #33485d;
+    color: var(--colot-text);
     margin-right: 5px;
   }
 
@@ -86,14 +91,14 @@
     font-size: 16px;
     line-height: 200%;
     font-weight: 400;
-    color: #33485d;
+    color: var(--colot-text);
     margin-right: 18px;
   }
+
   &_description {
     font-size: 16px;
     line-height: 24px;
-
-    color: #5c6d7d;
+    color: var(--color-blue-smoke);
     margin-top: 11px;
     margin-bottom: 34px;
   }
@@ -102,7 +107,7 @@
     text-align: center;
     cursor: pointer;
     background: transparent;
-    color: #5c6d7d;
+    color: var(--color-blue-smoke);
     font-size: 13px;
     line-height: 120%;
     outline: none;
@@ -113,11 +118,13 @@
     margin-top: 40px;
   }
 }
+
 @media screen and (max-width: 375px) {
   .reviews-section {
     &_reviews-link {
       display: none;
     }
+
     &_reviews-btn {
       display: none;
     }

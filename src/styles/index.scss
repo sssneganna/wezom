@@ -1,8 +1,14 @@
 :root {
-  --header-bg: #ffffff;
+  --white-bg: #ffffff;
+  --green-color: #219653;
   --footer-height: 60px;
   --header-height: 150px;
   --page-width: 1522px;
+  --page-width-table: 620px;
+  --page-width-mobile: 350px;
+  --colot-text: #33485d;
+  --color-blue-smoke: #5c6d7d;
+  --color-text-white: #ffffff;
 }
 
 * {
@@ -34,7 +40,11 @@ body {
 }
 
 .global-main {
-  background: linear-gradient(180deg, #219653 1%, #ffffff 99%);
+  background: linear-gradient(
+    180deg,
+    var(--green-color) 1%,
+    var(--white-bg) 99%
+  );
   min-height: calc(100vh - 60px - 150px);
   padding-top: 30px;
   width: 100%;
@@ -42,12 +52,12 @@ body {
 
 @media screen and (max-width: 768px) {
   :root {
-    --page-width: 620px;
+    --page-width: var(--page-width-table);
   }
 }
 
 @media screen and (max-width: 375px) {
   :root {
-    --page-width: 350px;
+    --page-width: var(--page-width-mobile);
   }
 }

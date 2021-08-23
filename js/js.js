@@ -23,7 +23,8 @@ $(function () {
     $this.addClass("active");
     $(".slider-nav_item").not(this).removeClass("active");
   });
-
+ 
+  
   $(".basket-box_btn-basket").on("click", function (event) {
     event.preventDefault();
     $(".basket-box_window").toggleClass("basket-box_window_opened");

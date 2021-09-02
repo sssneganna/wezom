@@ -1,29 +1,29 @@
 .reviews-section {
   width: 100%;
-  margin: 93px 0 0 0;
+  margin: 83px 0 0 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
-  &_box {
+  &__box {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    margin-bottom: 10px;
   }
 
-  &_title {
+  &__title {
     font-size: 30px;
     line-height: 120%;
     font-weight: 400;
     color: var(--colot-text);
   }
 
-  &_number {
+  &__number {
     color: var(--green-color);
   }
 
-  &_reviews-link {
+  &__reviews-link {
     text-decoration: none;
     font-size: 16px;
     line-height: 120%;
@@ -33,11 +33,11 @@
     border-bottom: 1px solid #c3c5c5;
   }
 
-  &_reviews-link:hover {
+  &__reviews-link:hover {
     opacity: 0.8;
   }
 
-  &_reviews-btn {
+  &__reviews-btn {
     position: relative;
     cursor: pointer;
     outline: none;
@@ -45,7 +45,7 @@
     border: none;
   }
 
-  &_reviews-btn::before {
+  &__reviews-btn::before {
     content: "";
     display: block;
     width: 5px;
@@ -65,21 +65,21 @@
 }
 
 .reviews {
-  &_content {
+  &__content {
     display: none;
     border-bottom: 1px solid #dde8f0;
-    padding-bottom: 34px;
+    padding-bottom: 5px;
     list-style: none;
     padding-right: 30px;
-    padding-top: 29px;
+    padding-top: 25px;
   }
 
-  &_name-flex {
+  &__name-flex {
     display: flex;
     align-items: center;
   }
 
-  &_name {
+  &__name {
     font-size: 16px;
     font-weight: bold;
     line-height: 200%;
@@ -87,7 +87,7 @@
     margin-right: 5px;
   }
 
-  &_date {
+  &__date {
     font-size: 16px;
     line-height: 200%;
     font-weight: 400;
@@ -95,7 +95,7 @@
     margin-right: 18px;
   }
 
-  &_description {
+  &__description {
     font-size: 16px;
     line-height: 24px;
     color: var(--color-blue-smoke);
@@ -103,7 +103,7 @@
     margin-bottom: 34px;
   }
 
-  &_btn-showmore {
+  &__btn-showmore {
     text-align: center;
     cursor: pointer;
     background: transparent;
@@ -115,17 +115,18 @@
     border-radius: 10px 0 10px 0;
     width: 147px;
     height: 40px;
-    margin-top: 40px;
+    margin-top: 25px;
+    margin-left: 200px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .reviews-section {
-    &_reviews-link {
+    &__reviews-link {
       display: none;
     }
 
-    &_reviews-btn {
+    &__reviews-btn {
       display: none;
     }
   }

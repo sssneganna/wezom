@@ -2,7 +2,7 @@
   display: flex;
   margin-left: 14px;
 
-  &_btn-number {
+  &__btn-number {
     width: 30px;
     height: 20px;
     background: #ffbe48;
@@ -15,9 +15,9 @@
     right: 5px;
   }
 
-  &_btn-comparison,
-  &_btn-favorites,
-  &_btn-basket {
+  &__btn-comparison,
+  &__btn-favorites,
+  &__btn-basket {
     border: 2px solid #ffcb6d;
     width: 90px;
     height: 60px;
@@ -26,54 +26,54 @@
     background: transparent;
   }
 
-  &_btn-comparison,
-  &_btn-favorites {
+  &__btn-comparison,
+  &__btn-favorites {
     border-right: none;
   }
 
-  &_btn-basket {
+  &__btn-basket {
     border-radius: 0 10px 0 0;
     position: relative;
   }
 
-  &_btn-comparison:hover,
-  &_btn-favorites:hover,
-  &_btn-basket:hover {
+  &__btn-comparison:hover,
+  &__btn-favorites:hover,
+  &__btn-basket:hover {
     border: 2px solid #47b39c;
   }
 
-  &_btn-basket:active {
+  &__btn-basket:active {
     background: #47b39c;
     border: 2px solid #47b39c;
   }
 
-  &_btn-basket:active .basket-box-icon-shop {
+  &__btn-basket:active .basket-box-icon-shop {
     fill: var(--color-text-white);
   }
 
-  &_btn-basket:active &_btn-number {
+  &__btn-basket:active &__btn-number {
     background: var(--color-text-white);
   }
 
-  &_btn-comparison:active,
-  &_btn-favorites:active {
+  &__btn-comparison:active,
+  &__btn-favorites:active {
     background: #47b39c;
     border: 2px solid #47b39c;
   }
 
-  &_btn-favorites:active .basket-box-icon-favorites {
+  &__btn-favorites:active .basket-box-icon-favorites {
     fill: var(--color-text-white);
   }
 
-  &_btn-comparison:active .basket-box-icon-comparison {
-    fill:  var(--color-text-white);
+  &__btn-comparison:active .basket-box-icon-comparison {
+    fill: var(--color-text-white);
   }
 
-  &_window-open {
+  &__window-open {
     position: relative;
   }
 
-  &_window {
+  &__window {
     position: relative;
     display: none;
     position: absolute;
@@ -88,7 +88,7 @@
     border-radius: 20px;
   }
 
-  &_window::before {
+  &__window::before {
     content: "";
     display: block;
     width: 30px;
@@ -102,11 +102,11 @@
     transform: translateX(-50%) rotate(45deg);
   }
 
-  &_window_opened {
+  &__window-opened {
     display: block;
   }
 
-  &_window-text {
+  &__window-text {
     width: 189px;
     font-size: 18px;
     line-height: 21px;
@@ -114,11 +114,11 @@
     margin-bottom: 28px;
   }
 
-  &_window-text-bold {
+  &__window-text-bold {
     font-weight: 700;
   }
 
-  &_window-btn {
+  &__window-btn {
     background: #47b39c;
     border-radius: 20px 0 20px 0;
     width: 277px;
@@ -136,16 +136,16 @@
     justify-content: center;
   }
 
-  &_window-btn:hover,
-  &_window-btn:active {
+  &__window-btn:hover,
+  &__window-btn:active {
     opacity: 0.8;
   }
 
-  &_window-btn-text {
+  &__window-btn-text {
     margin-right: 16px;
   }
 
-  &_window-editing {
+  &__window-editing {
     font-weight: 500;
     font-size: 18px;
     line-height: 120%;
@@ -156,13 +156,35 @@
     border-bottom: 1px solid #c3c5c5;
   }
 
-  &_window-editing:hover {
+  &__window-editing:hover {
     opacity: 0.8;
   }
 }
 
 @media screen and (max-width: 375px) {
   .basket-box {
-    display: none;
+    &__btn-comparison,
+    &__btn-favorites {
+      display: none;
+    }
+
+    &__window-open {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 6000;
+    }
+
+    &__btn-basket {
+      border: 2px solid white;
+      width: 60px;
+      height: 30px;
+    }
+
+    &-icon-shop {
+      width: 20px;
+      height: 15px;
+      fill: white;
+    }
   }
 }

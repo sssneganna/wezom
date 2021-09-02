@@ -4,18 +4,18 @@
   height: 200px;
   padding-top: 33px;
   padding-bottom: 51px;
-  margin: 40px 0;
+  margin: 40px 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  &_text {
+  &__text {
     font-size: 30px;
     line-height: 120%;
     color: var(--color-text-white);
   }
 
-  &_form {
+  &__form {
     margin-top: 20px;
     background: var(--white-bg);
     height: 60px;
@@ -24,7 +24,7 @@
     border: 1px solid var(--white-bg);
   }
 
-  &_input {
+  &__input {
     width: 371px;
     height: 100%;
     background: transparent;
@@ -39,7 +39,7 @@
     opacity: 0.7;
   }
 
-  &_send-btn {
+  &__send-btn {
     width: 213px;
     height: 100%;
     background: #ffa800;
@@ -51,8 +51,8 @@
     border: none;
   }
 
-  &_send-btn:hover,
-  &_send-btn:active {
+  &__send-btn:hover,
+  &__send-btn:active {
     background: #dba841;
   }
 }
@@ -61,20 +61,20 @@
   .phone-field {
     padding: 40px;
 
-    &_text {
+    &__text {
       text-align: center;
       font-size: 18px;
     }
 
-    &_form {
+    &__form {
       height: 40px;
     }
 
-    &_input {
+    &__input {
       width: 250px;
     }
 
-    &_send-btn {
+    &__send-btn {
       width: 100px;
       font-size: 15px;
     }
@@ -83,19 +83,19 @@
 
 @media screen and (max-width: 375px) {
   .phone-field {
-    &_text {
+    &__text {
       font-size: 15px;
     }
 
-    &_form {
+    &__form {
       height: 40px;
     }
 
-    &_input {
+    &__input {
       width: 180px;
     }
 
-    &_send-btn {
+    &__send-btn {
       width: 70px;
       font-size: 12px;
     }

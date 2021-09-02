@@ -1,37 +1,39 @@
 .header-top-menu {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
+  justify-content: space-between;
+
+  &__icon {
+    margin-right: 277px;
+  }
+}
+.flex {
+  display: flex;
 }
 
 .menu {
   display: flex;
   align-items: center;
 
-  &_icon {
-    margin-right: 277px;
-    height: 40px;
-  }
-
-  &_list {
+  &__list {
     display: flex;
     align-items: center;
     list-style: none;
   }
 
-  &_item {
-    margin-right: 25px;
+  &__item {
+    margin-right: 23px;
   }
 
-  &_link::after {
+  &__link::after {
     content: "";
     background: #dde8f0;
     display: block;
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -40,20 +42,20 @@
     transform: translateY(-50%);
   }
 
-  &_link.active::after {
+  &__link.active::after {
     display: none;
   }
 
-  &_link.active {
+  &__link.active {
     border-bottom: 1px solid #586a7c;
     opacity: 1;
   }
 
-  &_link:hover {
+  &__link:hover {
     opacity: 1;
   }
 
-  &_link {
+  &__link {
     position: relative;
     text-decoration: none;
     font-size: 14px;
@@ -68,75 +70,60 @@
 
 .info {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 
-  &_list {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    width: 400px;
-  }
-
-  &_item {
+  &__item {
     display: flex;
   }
+  &__item:last-of-type {
+    margin-left: 52px;
+  }
 
-  &_phone,
-  &_btn-logIn,
-  &_btn,
-  &_btn-language {
+  &__item:first-of-type {
+    margin-right: 56px;
+  }
+
+  &_text {
     font-weight: bold;
     font-size: 14px;
     line-height: 120%;
-    color:  var(--colot-text);
+    color: var(--colot-text);
   }
 
-  &_btn-logIn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &_phone {
-    text-decoration: none;
-  }
-
-  &_phone:hover,
-  &_btn-language:hover,
-  &_btn-logIn:hover {
+  &_text:hover {
     opacity: 0.8;
   }
 
-  &_btn-logIn:active {
-    opacity: 0.8;
-  }
-
-  &_btn,
-  &_btn-logIn {
+  &__btn {
     outline: none;
     background: transparent;
     cursor: pointer;
     border: none;
   }
+}
 
-  &_btn-language {
+.language {
+  display: flex;
+
+  &__btn {
     position: relative;
-    text-decoration: none;
-    margin-right: 20px;
+    margin-right: 21px;
   }
 
-  &_btn-language::before {
+  &__btn:last-of-type {
+    margin-right: 0;
+  }
+
+  &__btn::before {
     display: none;
   }
 
-  &_btn-language.active::before {
+  &__btn.active::before {
     content: "";
     background: #dde8f0;
     display: block;
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -146,17 +133,34 @@
   }
 }
 
+.logIn {
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn:active {
+    opacity: 0.8;
+  }
+}
+
+.phone {
+  &__link {
+    text-decoration: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .header-top-menu {
     flex-direction: column;
     align-items: stretch;
+    &__icon {
+      margin-right: 30px;
+    }
   }
 
   .menu {
     margin-bottom: 20px;
-    &_icon {
-      margin-right: 30px;
-    }
   }
 }
 

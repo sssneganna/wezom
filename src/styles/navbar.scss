@@ -1,13 +1,14 @@
 .navigation {
   display: flex;
   background: #ffbe48;
+  border: 1px solid #ffbe48;
   border-radius: 10px 0 0 0;
   width: 371px;
   height: 60px;
   position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 25px 20px 21px;
+  padding: 20px 25px 20px 19px;
   margin-right: 15px;
 }
 
@@ -17,17 +18,17 @@
   justify-content: flex-end;
   z-index: 50;
 
-  &_title {
+  &__title {
     font-size: 24px;
     line-height: 120%;
-    left: 46px;
+    left: 47px;
     letter-spacing: 1px;
     top: -5px;
     position: absolute;
     color: var(--color-text-white);
   }
 
-  &_category-link {
+  &__category-link {
     position: absolute;
     right: 25px;
     top: 20px;
@@ -39,12 +40,12 @@
     padding-bottom: 4px;
   }
 
-  &_category-link:hover,
-  &_title:hover {
+  &__category-link:hover,
+  &__title:hover {
     opacity: 0.8;
   }
 
-  &_list {
+  &__list {
     position: absolute;
     top: 60px;
     left: 0;
@@ -64,13 +65,13 @@
     transform: scaleY(0);
   }
 
-  &_item {
+  &__item {
     width: 100%;
     transition: opacity 0.3s 0.1s;
     list-style: none;
   }
 
-  &_link {
+  &__link {
     padding-left: 10px;
     position: relative;
     display: flex;
@@ -85,7 +86,7 @@
     color: var(--color-blue-smoke);
   }
 
-  &_link::before {
+  &__link::before {
     content: "";
     display: block;
     width: 9px;
@@ -100,18 +101,18 @@
     opacity: 0.5;
   }
 
-  &_link:hover {
+  &__link:hover {
     background-color: #dde8f0;
     transition: background-color 0.4s ease 0s;
     color: var(--colot-text);
     border-radius: 10px;
   }
 
-  &_link:hover::before {
+  &__link:hover::before {
     opacity: 1;
   }
 
-  &_toggle {
+  &__toggle {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -125,28 +126,30 @@
     cursor: pointer;
   }
 
-  &.global-nav_opened .global-nav_list {
+  &.global-nav__opened .global-nav__list {
     transform: scaleY(1);
   }
 
-  &.global-nav_opened .global-nav_item {
+  &.global-nav__opened .global-nav__item {
     opacity: 1;
   }
 }
 
 @media screen and (max-width: 375px) {
   .navigation {
+    z-index: 5000;
+    position: fixed;
     width: 100%;
     border-radius: 0%;
     margin-right: 0;
   }
 
   .global-nav {
-    &_title {
+    &__title {
       display: none;
     }
 
-    &_category-link {
+    &__category-link {
       display: none;
     }
   }

@@ -14,21 +14,27 @@ import "./styles/characteristic.scss";
 import "./styles/basketBox.scss";
 import "./styles/headerTopMenu.scss";
 import "./styles/sprite.scss";
-import { createHeader } from "./scripts/Header/Header.js";
-import { createFooter } from "./scripts/Footer/Footer.js";
-import { createMain } from "./scripts/Main/Main.js";
+import { createNavigationItem } from "./scripts/Main/createNavigationItem";
+import { createProductItem } from "./scripts/Main/createProductItem.js";
+import { createReviews } from "./scripts/Main/CreateReviews.js";
 
-const header = document.createElement("header");
-document.body.appendChild(header);
-header.classList.add("global-header");
-createHeader(header);
+const nav = document.querySelector("#nav");
+createNavigationItem(nav);
 
-const main = document.createElement("main");
-document.body.appendChild(main);
-main.classList.add("global-main");
-createMain(main);
+const form = document.querySelector(".form-search");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  form.reset();
+});
 
-const footer = document.createElement("footer");
-document.body.appendChild(footer);
-footer.classList.add("global-footer");
-createFooter(footer);
+const formPhone = document.querySelector(".phone-field__form");
+formPhone.addEventListener("submit", (e) => {
+  e.preventDefault();
+  formPhone.reset();
+});
+
+const productList = document.querySelector(".product__list");
+createProductItem(productList);
+
+const rew = document.querySelector("#reviews");
+createReviews(rew);

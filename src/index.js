@@ -11,7 +11,7 @@ import "./styles/phoneField.scss";
 import "./styles/productList.scss";
 import "./styles/slider.scss";
 import "./styles/characteristic.scss";
-import "./styles/basketBox.scss";
+import "./styles/buttons.scss";
 import "./styles/headerTopMenu.scss";
 import "./styles/sprite.scss";
 import { createNavigationItem } from "./scripts/Main/createNavigationItem";

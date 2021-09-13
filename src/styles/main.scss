@@ -10,28 +10,26 @@
   justify-content: space-between;
   width: 100%;
   padding: 0px 127px 30px 0px;
+}
+.left-section {
+  width: 53%;
+  margin-right: 29px;
+}
 
-  &__left {
-    width: 53%;
-    margin-right: 29px;
-  }
-
-  &__right {
-    width: 47%;
-  }
+.right-section {
+  width: 47%;
 }
 
 @media screen and (max-width: 768px) {
   .main-section {
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
+  }
+  .left-section {
+    width: 100%;
+  }
 
-    &__left {
-      width: 100%;
-    }
-
-    &__right {
-      width: 100%;
-    }
+  .right-section {
+    width: 100%;
   }
 }

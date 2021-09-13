@@ -9,7 +9,7 @@
   max-width: 1440px;
 }
 
-.header-menu {
+.lower-menu {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
@@ -18,24 +18,14 @@
 
 @media screen and (max-width: 768px) {
   .global-header {
-    height: 180px;
-  }
-
-  .header-content {
-    max-width: 620px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .global-header {
     height: 60px;
   }
 
   .header-content {
-    max-width: 375px;
+    max-width: 748px;
   }
 
-  .header-menu {
+  .lower-menu {
     flex-direction: column;
   }
 }

@@ -57,66 +57,16 @@
   &__old-price {
     font-size: 16px;
     line-height: 120%;
-    color: var(--colot-text);
+    color: var(--color-text);
     opacity: 0.5;
   }
 
   &__buttons {
     display: flex;
   }
-
-  &__btn-basket {
-    outline: none;
-    border: 1px solid var(--green-color);
-    width: 226px;
-    height: 60px;
-    background: var(--green-color);
-    font-size: 24px;
-    line-height: 120%;
-    color: var(--color-text-white);
-    padding: 15px 21px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-
-  &__btn-basket:hover,
-  &__btn-basket:active {
-    background: #47b39c;
-    border: 1px solid #47b39c;
-  }
-
-  &__buttons-phone {
-    padding: 13px 46px 13px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 2px solid #ffcb6d;
-    height: 60px;
-    outline: none;
-    cursor: pointer;
-    background: transparent;
-    width: 167px;
-    margin-left: 8px;
-  }
-
-  &__buttons-phone:hover,
-  &__buttons-phone:active {
-    border: 2px solid #47b39c;
-  }
-
-  &__buttons-text {
-    margin-left: 13px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 120%;
-    color: var(--color-blue-smoke);
-  }
 }
 
-.bue-info {
+.buy-info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 28px;
@@ -140,7 +90,7 @@
     font-size: 14px;
     line-height: 120%;
     border-bottom: 1px solid #dde8f0;
-    color: var(--colot-text);
+    color: var(--color-text);
     margin-left: 8px;
   }
 
@@ -155,12 +105,44 @@
     font-weight: 600;
   }
 }
-.basket-box__btn-favorites:nth-last-of-type(2) {
-  border-right: 2px solid #ffcb6d;
+@media screen and (max-width: 768px) {
+  .buy-info {
+    margin-bottom: 16px;
+  }
+
+  .buy-card {
+    margin: 0 auto;
+    width: 591px;
+    height: 203px;
+    margin-bottom: 15px;
+
+    &__sale {
+      width: 80px;
+      font-size: 14px;
+    }
+
+    &__new-price {
+      font-size: 20px;
+    }
+
+    &__old-price {
+      font-size: 14px;
+    }
+
+    &__btn-basket {
+      width: 100px;
+
+      font-size: 14px;
+    }
+
+    &__buttons-phone {
+      width: 100px;
+    }
+  }
 }
 
 @media screen and (max-width: 375px) {
-  .bue-info {
+  .buy-info {
     display: none;
   }
 

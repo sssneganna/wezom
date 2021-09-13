@@ -18,3 +18,9 @@
   align-items: center;
   line-height: 18px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    max-width: 738px;
+  }
+}

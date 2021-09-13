@@ -1,17 +1,22 @@
-.header-top-menu {
+.top-menu {
   display: flex;
   width: 100%;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 17px;
   justify-content: space-between;
-
-  &__icon {
-    margin-right: 277px;
-  }
 }
+
 .flex {
   display: flex;
+}
+
+.logo {
+  text-decoration: none;
+
+  &_margin {
+    margin-right: 277px;
+  }
 }
 
 .menu {
@@ -61,7 +66,7 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
-    color: var(--colot-text);
+    color: var(--color-text);
     border-bottom: 1px solid var(--color-text-white);
     padding: 4px 0;
     opacity: 0.8;
@@ -72,53 +77,36 @@
   display: flex;
   align-items: center;
 
-  &__item {
-    display: flex;
-  }
-  &__item:last-of-type {
-    margin-left: 52px;
-  }
-
-  &__item:first-of-type {
-    margin-right: 56px;
-  }
-
   &_text {
     font-weight: bold;
     font-size: 14px;
     line-height: 120%;
-    color: var(--colot-text);
+    color: var(--color-text);
   }
 
   &_text:hover {
     opacity: 0.8;
-  }
-
-  &__btn {
-    outline: none;
-    background: transparent;
-    cursor: pointer;
-    border: none;
   }
 }
 
 .language {
   display: flex;
 
-  &__btn {
+  &__link {
     position: relative;
-    margin-right: 21px;
+    margin-right: 32px;
+    text-decoration: none;
   }
 
-  &__btn:last-of-type {
+  &__link:last-of-type {
     margin-right: 0;
   }
 
-  &__btn::before {
+  &__link::before {
     display: none;
   }
 
-  &__btn.active::before {
+  &__link.active::before {
     content: "";
     background: #dde8f0;
     display: block;
@@ -131,6 +119,10 @@
     z-index: 1;
     transform: translateY(-50%);
   }
+
+  &_margin {
+    margin-right: 58px;
+  }
 }
 
 .logIn {
@@ -138,10 +130,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
   }
 
   &__btn:active {
     opacity: 0.8;
+  }
+
+  &_table {
+    display: none;
   }
 }
 
@@ -149,23 +149,47 @@
   &__link {
     text-decoration: none;
   }
+
+  &_margin {
+    margin-right: 68px;
+  }
 }
+
 @media screen and (max-width: 768px) {
-  .header-top-menu {
-    flex-direction: column;
-    align-items: stretch;
-    &__icon {
-      margin-right: 30px;
+  .top-menu {
+    display: none;
+  }
+  .menu {
+    &__list {
+      flex-direction: column;
+      align-items: start;
     }
   }
-
-  .menu {
-    margin-bottom: 20px;
+  .info_text {
+    color: var(--color-text-white);
+    font-size: 12px;
+  }
+  .language__link {
+    margin-right: 15px;
+  }
+  .language__link.active::before {
+    left: -10px;
+    background: var(--color-text-white);
+  }
+  .logIn {
+    &_table {
+      display: block;
+      position: fixed;
+      z-index: 7000;
+      top: 20px;
+      right: 60px;
+    }
   }
 }
-
 @media screen and (max-width: 375px) {
-  .header-top-menu {
-    display: none;
+  .logIn {
+    &_table {
+      display: none;
+    }
   }
 }

@@ -18,9 +18,14 @@
     position: relative;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
-  &__header:after {
+  &__header:hover {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  &__header::after {
     content: "";
     display: block;
     width: 5px;
@@ -60,5 +65,21 @@
     color: var(--color-blue-smoke);
     font-weight: 300;
     font-style: italic;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accordion {
+    &__header {
+      padding: 20px 10px 20px 10px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__content {
+      font-size: 12px;
+    }
   }
 }

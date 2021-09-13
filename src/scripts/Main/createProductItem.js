@@ -6,9 +6,10 @@ export const createProductItem = (root) => {
   for (let i = 0; i < images.length; i++) {
     const productItem = document.createElement("li");
     let itemContent = `
+    <a class="product__link" href="#">
   <div class="product__top-info">
         <div class="product__top">${images[i].top}</div>
-        <div class="product__like">  <svg class="basket-box-icon-favorites">
+        <div class="product__like">  <svg class="icon-favorites">
         <use xlink:href="./src/assets/sprite.svg#favorites"></use>
       </svg></div>
           
@@ -40,7 +41,7 @@ export const createProductItem = (root) => {
         </div>
     </div>
     </div>
-       
+       </a>
         `;
     productItem.innerHTML = itemContent;
 

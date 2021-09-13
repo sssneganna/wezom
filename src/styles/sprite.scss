@@ -1,12 +1,13 @@
 .searchIcon {
   width: 18px;
   height: 18px;
-  fill: var(--colot-text);
+  fill: var(--color-text);
 }
 
 .wezom_logo {
   width: 114px;
   height: 41px;
+  fill: var(--color-text);
 }
 
 .menuIcon {
@@ -21,33 +22,41 @@
   height: 34px;
   margin-right: 25px;
 }
-.basket-box-icon-comparison,
-.basket-box-icon-favorites,
-.basket-box-icon-shop,
-.basket-box-icon-shop-white {
+.icon-comparison,
+.icon-favorites,
+.icon-shop,
+.icon-shop-white {
   width: 30px;
   height: 25px;
 }
-.basket-box-icon-comparison,
-.basket-box-icon-favorites,
-.basket-box-icon-shop {
-  fill: var(--colot-text);
+
+.icon-phone {
+  width: 40px;
+  height: 40px;
 }
 
-.basket-box-icon-shop:active,
-.basket-box-icon-shop:focus {
+.icon-comparison,
+.icon-favorites,
+.icon-shop,
+.icon-phone {
+  fill: var(--color-text);
+}
+
+.icon-shop:active,
+.icon-shop:focus {
   fill: var(--color-text-white);
 }
-.basket-box-icon-comparison:active {
+.icon-comparison:active {
   fill: var(--color-text-white);
 }
-.basket-box-icon-favorites:active {
+.icon-favorites:active {
   fill: var(--color-text-white);
 }
 
-.basket-box-icon-shop-white {
+.icon-shop-white {
   fill: var(--color-text-white);
 }
+
 .inStock {
   width: 18.75px;
   height: 18.75px;
@@ -62,11 +71,6 @@
 .oneStar {
   width: 16px;
   height: 14px;
-}
-
-.basket-box-icon-phone {
-  width: 30px;
-  height: 30px;
 }
 
 .warranty {
@@ -84,4 +88,30 @@
   height: 20px;
   margin-left: 12px;
   margin-right: 9px;
+  fill: #ffbe48;
+}
+@media screen and (max-width: 768px) {
+  .logIn_icon {
+    fill: white;
+  }
+
+  .icon-shop {
+    fill: white;
+  }
+
+  .searchIcon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .wezom_logo {
+    width: 60px;
+    height: 20px;
+    fill: var(--white-bg);
+  }
+  .category {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+  }
 }

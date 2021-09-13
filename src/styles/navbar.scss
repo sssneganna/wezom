@@ -202,6 +202,7 @@
     &__list {
       transform-origin: left;
       transform: scaleX(0);
+      width: 60%;
     }
 
     &__link {
@@ -220,5 +221,13 @@
     position: absolute;
     top: 10px;
     right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .global-nav {
+    &__list {
+      width: 100%;
+    }
   }
 }

@@ -281,3 +281,21 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .buy-card__buttons {
+    justify-content: flex-end;
+  }
+  .button {
+    &_large,
+    &_medium,
+    &_smallest {
+      width: 20%;
+    }
+
+    &_alignment-left,
+    &_alignment-right {
+      margin: 0;
+    }
+  }
+}

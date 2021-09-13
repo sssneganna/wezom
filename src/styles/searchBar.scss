@@ -37,7 +37,7 @@
 @media screen and (max-width: 768px) {
   .form-search {
     &__field {
-      width: 400px;
+      width: 60%;
       height: 30px;
       z-index: 6000;
       position: fixed;
@@ -49,13 +49,6 @@
 
     &__input {
       font-size: 10px;
-    }
-  }
-}
-@media screen and (max-width: 375px) {
-  .form-search {
-    &__field {
-      width: 250px;
     }
   }
 }

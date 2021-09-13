@@ -73,11 +73,16 @@
 @media screen and (max-width: 768px) {
   .slider-container {
     margin-top: 0;
+    height: auto;
   }
   .slider {
     width: 100%;
     height: auto;
     position: relative;
+
+    &__image {
+      width: 100%;
+    }
   }
 
   .slider-nav {
@@ -85,4 +90,9 @@
   }
 }
 @media screen and (max-width: 375px) {
+  .slider {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
 }

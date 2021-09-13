@@ -274,3 +274,10 @@
     fill: white;
   }
 }
+@media screen and (max-width: 768px) {
+  .basket {
+    &__btn {
+      right: 0;
+    }
+  }
+}

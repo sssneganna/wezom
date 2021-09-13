@@ -63,10 +63,7 @@ $(function () {
         settings: {
           autoplay: true,
           autoplaySpeed: 2000,
-
           vertical: false,
-          centerMode: true,
-          centerPadding: "40px",
         },
       },
     ],

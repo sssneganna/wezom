@@ -10,6 +10,10 @@
     align-items: center;
     padding-right: 10px;
   }
+  &_table {
+    display: none;
+  }
+
   &__field:hover,
   &__field:active {
     border: 2px solid var(--color-text);
@@ -36,6 +40,10 @@
 }
 @media screen and (max-width: 768px) {
   .form-search {
+    display: none;
+    &_table {
+      display: block;
+    }
     &__field {
       width: 60%;
       height: 30px;

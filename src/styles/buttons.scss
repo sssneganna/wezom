@@ -13,6 +13,10 @@
   background: var(--bg-color);
   opacity: 1;
 
+  &_table {
+    display: none;
+  }
+
   &__text {
     line-height: 120%;
     font-weight: 500;
@@ -236,22 +240,24 @@
 }
 
 @media screen and (max-width: 768px) {
-  .comparison,
-  .favorites {
-    display: none;
-  }
-
-  .basket {
-    &__btn {
+  .button {
+    &_table {
       display: block;
       border: none;
       width: 60px;
       height: 30px;
       z-index: 6000;
-      position: fixed;
+      position: absolute;
       top: 15px;
       right: 15px;
     }
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .basket {
     &__number {
       background: var(--white-bg);
       width: 20px;
@@ -272,13 +278,6 @@
 
   .icon-shop {
     fill: white;
-  }
-}
-@media screen and (max-width: 768px) {
-  .basket {
-    &__btn {
-      right: 0;
-    }
   }
 }
 

@@ -61,9 +61,8 @@ $(function () {
       {
         breakpoint: 769,
         settings: {
-          autoplay: true,
-          autoplaySpeed: 2000,
           vertical: false,
+          arrows: false,
         },
       },
     ],
@@ -73,5 +72,48 @@ $(function () {
     $(".slider").slick("slickGoTo", $(this).index());
   });
 
+  $("#slider-next").click(function () {
+    $(".slider").slick("slickNext");
+  });
+
+  $("#slider-prev").click(function () {
+    $(".slider").slick("slickPrev");
+  });
+
+  $("#slider-next-product").click(function () {
+    $(".product__list").slick("slickNext");
+  });
+
+  $("#slider-prev-product").click(function () {
+    $(".product__list").slick("slickPrev");
+  });
+
   $("#tel").mask("+38 (099) 99-99-999");
 });
+
+if (window.innerWidth < 769) {
+  mobileOnlySlider();
+}
+
+function mobileOnlySlider() {
+  $(document).ready(function () {
+    $(".product__list").slick({
+      swipeToSlide: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      touchMove: true,
+
+      responsive: [
+        {
+          breakpoint: 568,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  });
+}

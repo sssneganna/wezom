@@ -90,8 +90,12 @@
 
 @media screen and (max-width: 375px) {
   .phone-field {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 150px;
     &__text {
-      font-size: 15px;
+      font-size: 12px;
     }
 
     &__form {

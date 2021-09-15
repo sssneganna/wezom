@@ -180,9 +180,11 @@
     &_table {
       display: block;
       position: absolute;
-      z-index: 7000;
-      top: 20px;
-      right: 60px;
+      right: 65px;
+      top: 16px;
+    }
+    &_table-text {
+      display: none;
     }
   }
 }

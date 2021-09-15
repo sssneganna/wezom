@@ -119,11 +119,20 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  br {
+    display: none;
+  }
   :root {
     --page-width: var(--page-width-mobile);
   }
 
   .title {
     font-size: 20px;
+  }
+  .link_margin {
+    margin-top: 15px;
+  }
+  .link__text {
+    font-size: 12px;
   }
 }

@@ -67,7 +67,8 @@
                 <div class="navigation">
                     <nav class="global-nav">
 
-                        <ul class="global-nav__list" id="nav">
+                        <div class="global-nav__open-window">
+
                             <div class="global-nav__mobile-menu">
                                 <a class="logo" href="https://wezom.com.ua">
                                     <svg class="wezom_logo">
@@ -79,6 +80,7 @@
                                     <a class="language__link  info_text" href="#">Ua</a>
                                     <a class="language__link info_text" href="#">Ru</a>
                                 </div>
+                                <hr>
                                 <div class="logIn logIn_mobile">
                                     <button class="logIn__btn info_text">
                                         Войти
@@ -87,6 +89,7 @@
                                         </svg>
                                     </button>
                                 </div>
+                                <hr>
 
 
                                 <div class="menu">
@@ -102,15 +105,18 @@
                                         </li>
                                     </ul>
                                 </div>
+
+
+                            </div>
+                            <ul class="global-nav__list" id="nav"></ul>
+                            <div class="global-nav__mobile-menu">
                                 <div class="phone">
                                     <a class="phone__link info_text" href="tel: +38 068 000 00 00">
                                         <span>+38 068 000 00 00</span>
                                     </a>
                                 </div>
-
                             </div>
-
-                        </ul>
+                        </div>
                         <button class="global-nav__toggle">
                             <svg class="menuIcon">
                                 <use xlink:href="./src/assets/sprite.svg#menuIcon"></use>
@@ -119,14 +125,7 @@
                         </button>
                         <a class="global-nav__category-link" href="#">Все категории
                         </a>
-                        <div class="logIn logIn_table">
-                            <button class="logIn__btn info_text">
-                                Войти
-                                <svg class="logIn_icon">
-                                    <use xlink:href="./src/assets/sprite.svg#logIn"></use>
-                                </svg>
-                            </button>
-                        </div>
+
                         <form class="form-search form-search_table">
                             <div class="form-search__field">
                                 <input class="form-search__input" name="search" type="text" required
@@ -138,6 +137,14 @@
                                 </button>
                             </div>
                         </form>
+                        <div class="logIn logIn_table">
+                            <button class="logIn__btn info_text">
+                                <span class="logIn_table-text">Войти</span>
+                                <svg class="logIn_icon">
+                                    <use xlink:href="./src/assets/sprite.svg#logIn"></use>
+                                </svg>
+                            </button>
+                        </div>
                         <div class="basket-open">
                             <button
                                 class="basket__btn button button_smallest button_top-radius button_transparent button_table">
@@ -237,8 +244,15 @@
                 <div class="left-section">
                     <section class="slider-section">
                         <h2 class="slider-title">Test — Каталог — Группа — Тестовый товар для верстки</h2>
+
+
                         <div class="slider-container">
+
+
+                            <button class="slider-next slider-next_position-slider" id="slider-next"></button>
+                            <button class="slider-prev slider-prev_position-slider" id="slider-prev"></button>
                             <ul class="slider-nav">
+
                                 <li class="slider-nav__item">
                                     <img class="slider-nav__image" src="./src/assets/image1small.jpg" alt="image1">
                                 </li>
@@ -253,7 +267,9 @@
                                 </li>
 
                             </ul>
+
                             <ul class="slider">
+
                                 <li class="slider__item">
                                     <img class="slider__image" src="./src/assets/image1.jpg" alt="image1">
                                 </li>
@@ -269,7 +285,9 @@
                                 <li class="slider__item">
                                     <img class="slider__image" src="./src/assets/image1.jpg" alt="image1">
                                 </li>
+
                             </ul>
+
                         </div>
                     </section>
                     <section class="characteristic">
@@ -334,7 +352,8 @@
                             <div class="buy-card__buttons">
                                 <button class="button button_large button_filled button_alignment-left">
                                     <span class="button__content button__content_space-between">
-                                        <span class="button__text button__text_large button__text_white">В
+                                        <span
+                                            class="button__text button__text_large button__text_none button__text_white">В
                                             корзину</span>
                                         <span>
                                             <svg class="icon-shop-white">
@@ -342,36 +361,39 @@
                                             </svg></span>
                                     </span>
                                 </button>
-                                <button class="button button_smallest button_bordered button_transparent">
-                                    <span class="button__content">
-                                        <svg class="icon-comparison">
-                                            <use xlink:href="./src/assets/sprite.svg#comparison"></use>
-                                        </svg>
-                                    </span>
+                                <div class="flex">
+                                    <button
+                                        class="button button_smallest button_smallest-mobile button_bordered button_transparent">
+                                        <span class="button__content">
+                                            <svg class="icon-comparison">
+                                                <use xlink:href="./src/assets/sprite.svg#comparison"></use>
+                                            </svg>
+                                        </span>
 
-                                </button>
+                                    </button>
 
 
-                                <button class="button button_smallest button_transparent">
-                                    <span class="button__content">
-                                        <svg class="icon-favorites">
-                                            <use xlink:href="./src/assets/sprite.svg#favorites"></use>
-                                        </svg>
-                                    </span>
+                                    <button class="button button_smallest button_smallest-mobile button_transparent">
+                                        <span class="button__content">
+                                            <svg class="icon-favorites">
+                                                <use xlink:href="./src/assets/sprite.svg#favorites"></use>
+                                            </svg>
+                                        </span>
 
-                                </button>
-                                <button
-                                    class="button button_transparent button_medium button_alignment-right button_bottom-radius">
-                                    <span class="button__content">
-                                        <svg class="icon-phone">
-                                            <use xlink:href="./src/assets/sprite.svg#phone"></use>
-                                        </svg>
-                                        <span
-                                            class="button__text button__text_small button__text_grey button__text_margin">Купить
-                                            в
-                                            1 клик</span>
-                                    </span>
-                                </button>
+                                    </button>
+                                    <button
+                                        class="button button_transparent button_medium button_alignment-right button_bottom-radius">
+                                        <span class="button__content">
+                                            <svg class="icon-phone">
+                                                <use xlink:href="./src/assets/sprite.svg#phone"></use>
+                                            </svg>
+                                            <span
+                                                class="button__text button__text_small button__text_grey button__text_margin">Купить
+                                                в
+                                                1 клик</span>
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -445,7 +467,7 @@
                     <section class="reviews-section">
                         <div class="reviews-info">
                             <h2 class="title">Отзывы покупателей <span class="title_green">12</span></h2>
-                            <div class="link">
+                            <div class="link link_margin">
                                 <a class="link__text" href="#">Все отзывы
 
                                 </a>
@@ -468,6 +490,8 @@
                 <h2 class="product__title title">
                     <span>Тестовые товары</span>
                 </h2>
+                <button class="slider-next slider-next_position-product" id="slider-next-product"></button>
+                <button class="slider-prev slider-prev_position-product" id="slider-prev-product"></button>
                 <ul class="product__list">
                 </ul>
             </section>

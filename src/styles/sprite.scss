@@ -105,13 +105,30 @@
   }
 
   .wezom_logo {
-    width: 60px;
-    height: 20px;
+    width: 80px;
+    height: 50px;
     fill: var(--white-bg);
   }
   .category {
     width: 25px;
     height: 25px;
     margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .icon-phone {
+    display: none;
+  }
+
+  .icon-comparison,
+  .icon-favorites {
+    width: 20px;
+    height: 15px;
+  }
+
+  .reviews__icon {
+    width: 75px;
+    height: 10px;
   }
 }

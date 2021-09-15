@@ -69,8 +69,93 @@
     transform: translate3d(5px, -5px, 0);
   }
 }
+.slider-next,
+.slider-prev {
+  display: none;
+}
+
+.slider-prev {
+  transform: translateX(-50%) rotate(135deg);
+  position: relative;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2000;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.slider-prev::before {
+  opacity: 0.1;
+  width: 60px;
+  height: 60px;
+  content: "";
+  display: block;
+  border-bottom: 2px solid #33485d;
+  border-right: 2px solid #33485d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.slider-prev:hover::before {
+  opacity: 0.4;
+}
+.slider-next:hover::after {
+  opacity: 0.4;
+}
+.slider-next {
+  transform: translateX(-50%) rotate(-45deg);
+  z-index: 2000;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.slider-next::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #33485d;
+  border-right: 2px solid #33485d;
+  opacity: 0.1;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
 
 @media screen and (max-width: 768px) {
+  .slider-prev_position-product {
+    display: none;
+    left: 45px;
+  }
+
+  .slider-next_position-product {
+    right: -15px;
+  }
+  .slider-next,
+  .slider-prev {
+    display: block;
+  }
+  .slider-prev_position-slider {
+    left: 5%;
+  }
+  .slider-next_position-slider {
+    right: -5%;
+  }
   .slider-container {
     margin-top: 0;
     height: auto;
@@ -89,10 +174,20 @@
     display: none;
   }
 }
+@media screen and (max-width: 411px) {
+  .slider-next_position-slider {
+    right: -15%;
+  }
+  .slider-next::after,
+  .slider-prev::before {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .slider {
     width: 100%;
     height: auto;
-    position: relative;
   }
 }

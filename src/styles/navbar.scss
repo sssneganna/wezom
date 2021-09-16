@@ -183,7 +183,7 @@
 
 @media screen and (max-width: 768px) {
   .navigation {
-    justify-content: end;
+    justify-content: flex-end;
     width: 100vw;
     z-index: 5000;
     position: fixed;

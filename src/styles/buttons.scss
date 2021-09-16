@@ -242,10 +242,12 @@
 .basket-open {
   display: none;
 }
+
 @media screen and (max-width: 768px) {
   .basket-open {
     display: block;
   }
+
   .button {
     &_table {
       display: block;
@@ -253,6 +255,7 @@
       width: 60px;
       height: 30px;
     }
+
     &_biggest {
       width: 180px;
     }
@@ -305,6 +308,7 @@
     fill: white;
   }
 }
+
 @media screen and (max-width: 540px) {
   .window {
     width: 220px;
@@ -318,20 +322,25 @@
       font-size: 12px;
     }
   }
+
   .button {
     &__content_space-between {
       justify-content: center;
     }
+
     &__text_large {
       font-size: 14px;
     }
+
     &_large,
     &_medium {
       width: 120px;
     }
+
     &_smallest-mobile {
       width: 60px;
     }
+
     &__text_none {
       display: none;
     }
@@ -344,17 +353,21 @@
     &__text_margin {
       margin: 0;
     }
+
     &_small {
       width: 90px;
       height: 30px;
     }
+
     &_large,
     &_medium {
       width: 80px;
     }
+
     &_smallest-mobile {
       width: 40px;
     }
+
     &_alignment-left {
       padding: 0;
       margin: 0;

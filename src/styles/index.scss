@@ -49,6 +49,7 @@ body {
   padding-top: 30px;
   width: 100%;
 }
+
 .title {
   font-size: 30px;
   line-height: 120%;
@@ -105,12 +106,15 @@ body {
   :root {
     --page-width: var(--page-width-table);
   }
+
   .title {
     font-size: 22px;
   }
+
   .global-main {
     padding-top: 10px;
   }
+
   .link {
     &__text {
       font-size: 14px;
@@ -122,6 +126,7 @@ body {
   br {
     display: none;
   }
+
   :root {
     --page-width: var(--page-width-mobile);
   }
@@ -129,9 +134,11 @@ body {
   .title {
     font-size: 20px;
   }
+
   .link_margin {
     margin-top: 15px;
   }
+
   .link__text {
     font-size: 12px;
   }

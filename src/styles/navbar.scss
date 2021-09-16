@@ -34,13 +34,14 @@
     height: 30px;
     border: none;
     background: transparent;
-
     cursor: pointer;
   }
+
   &__toggle-close:hover,
   &__toggle-close:active {
     opacity: 0.8;
   }
+
   &__toggle-close::before {
     content: "";
     position: absolute;
@@ -175,6 +176,7 @@
     cursor: pointer;
   }
 }
+
 .global-nav__opened .global-nav__open-window {
   transform: scaleY(1);
 }
@@ -195,6 +197,7 @@
     &__mobile-menu {
       display: block;
     }
+
     &__title {
       display: none;
     }
@@ -217,9 +220,9 @@
     }
 
     &__link {
-      font-size: 14px;
-      padding-top: 4px;
-      padding-bottom: 4px;
+      font-size: 12px;
+      padding-top: 2px;
+      padding-bottom: 2px;
       margin-bottom: 4px;
     }
 

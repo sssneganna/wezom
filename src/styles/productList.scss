@@ -124,6 +124,10 @@
       margin-right: 10px;
       border: 2px solid #ecf7f1;
     }
+
+    &__item:hover {
+      transform: none;
+    }
   }
 }
 

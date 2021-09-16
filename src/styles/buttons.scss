@@ -158,9 +158,11 @@
 
 .basket {
   position: relative;
+
   &__btn {
     position: relative;
   }
+
   &__number {
     width: 30px;
     height: 20px;
@@ -275,6 +277,13 @@
   }
 
   .basket {
+    &__btn:hover,
+    &__btn:active {
+      border: none;
+      background: transparent;
+      opacity: 0.8;
+    }
+
     &__number {
       background: var(--white-bg);
       width: 20px;

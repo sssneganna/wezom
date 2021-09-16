@@ -139,6 +139,12 @@
 }
 
 @media screen and (max-width: 414px) {
+  .buy-card {
+    &__price {
+      padding: 15px 21px;
+    }
+  }
+
   .buy-info {
     display: none;
   }

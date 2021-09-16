@@ -67,13 +67,18 @@
   }
 }
 
+@media screen and (max-width: 414px) {
+  .characteristic {
+    &__list {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (max-width: 375px) {
   .characteristic {
     &__item {
       font-size: 12px;
-    }
-    &__list {
-      width: 100%;
     }
   }
 }

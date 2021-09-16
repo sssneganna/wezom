@@ -23,7 +23,7 @@ export const createProductItem = (root) => {
             <use xlink:href="./src/assets/sprite.svg#${images[i].rating}"></use>
           </svg>
          
-                <span>${images[i].number}</span>
+                <span class="product__number">${images[i].number}</span>
             </div>
             <div class="product__group">Group</div>
             <p class="product__text">${images[i].text}

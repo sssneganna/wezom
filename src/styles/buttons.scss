@@ -13,7 +13,7 @@
   background: var(--bg-color);
   opacity: 1;
 
-  &_table {
+  &_tablet {
     display: none;
   }
 
@@ -249,7 +249,7 @@
   }
 
   .button {
-    &_table {
+    &_tablet {
       display: block;
       border: none;
       width: 60px;
@@ -313,6 +313,7 @@
   .window {
     width: 220px;
     height: auto;
+
     &__text {
       font-size: 12px;
       margin-bottom: 15px;

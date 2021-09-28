@@ -1,29 +1,46 @@
 .main-page {
   background: var(--white-bg);
   max-width: var(--page-width);
+  width: 100%;
   margin: 0 auto;
   padding: 20px 40px 0px 44px;
 }
 
 .main-section {
   display: flex;
+
   justify-content: space-between;
   width: 100%;
   padding: 0px 127px 30px 0px;
 }
 
 .left-section {
-  width: 53%;
-  margin-right: 29px;
+  margin-right: 19px;
+  max-width: 704px;
+
+  flex-shrink: 0;
 }
 
 .right-section {
-  width: 47%;
+  width: 45%;
+  flex-shrink: 1;
+}
+
+@media screen and (max-width: 1366px) {
+  .main-section {
+    flex-direction: column;
+    padding: 0px 30px 30px 0px;
+  }
+  .right-section {
+    width: 100%;
+  }
+  .left-section {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .main-section {
-    flex-direction: column;
     padding: 10px;
   }
 

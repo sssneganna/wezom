@@ -39,7 +39,7 @@ createProductItem(productList);
 const rew = document.querySelector("#reviews");
 createReviews(rew);
 
-window.onscroll = () => {
+/*window.onscroll = () => {
   const navigation = document.querySelector(".navigation");
   const Y = window.scrollY;
 
@@ -48,4 +48,4 @@ window.onscroll = () => {
   } else if (Y < 100) {
     navigation.classList.remove("navigation_fixed");
   }
-};
+};*/

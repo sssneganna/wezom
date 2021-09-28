@@ -18,8 +18,8 @@ export const createProductItem = (root) => {
         </div>
         <img class="product__img" src="${images[i].url}" alt="a"/>
         <div class="product__info">
-            <div class="star">
-            <svg class="reviews__icon">
+            <div class="star product__star_margin">
+            <svg class="star__icon">
             <use xlink:href="./src/assets/sprite.svg#${images[i].rating}"></use>
           </svg>
          
@@ -31,13 +31,10 @@ export const createProductItem = (root) => {
         </div>
         <div class="product__price-box">
             <div class="product__price">${images[i].price}</div>
-            <div class="product__in-stock">
-            <span></span>
-                <span class="product__in-stock-text">
-                <svg class="inStock">
+            <div class=" in-stock product__in-stock">
+            <svg class="in-stock__icon">
                 <use xlink:href="./src/assets/sprite.svg#inStock"></use>
-              </svg>В наличии</span>
-
+            </svg>В наличии
         </div>
     </div>
     </div>

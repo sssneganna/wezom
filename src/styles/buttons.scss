@@ -1,13 +1,13 @@
 .buttons {
-  margin-left: 14px;
   display: flex;
+  margin-left: 14px;
 }
 
 .button {
   --border-color: black;
   --bg-color: grey;
   border: 2px solid var(--border-color);
-  height: 60px;
+  min-height: 60px;
   outline: none;
   cursor: pointer;
   background: var(--bg-color);
@@ -81,10 +81,12 @@
   &_smallest {
     width: 90px;
   }
+
   &_small {
     width: 147px;
     height: 40px;
   }
+
   &_medium {
     width: 167px;
   }
@@ -143,16 +145,12 @@
   --border-color: #47b39c;
   --bg-color: #47b39c;
 }
+
 .button:active .button__text {
   color: var(--color-text-white);
 }
 
-.button:active .icon-comparison,
-.button:active .icon-shop,
-.button:active .icon-favorites {
-  fill: var(--color-text-white);
-}
-.button:active .icon-phone {
+.button:active .button__icon {
   fill: var(--color-text-white);
 }
 
@@ -312,9 +310,17 @@
       font-size: 14px;
     }
   }
+}
 
-  .icon-shop {
-    fill: white;
+@media screen and (max-width: 660px) {
+  .button {
+    &__content_space-between {
+      justify-content: center;
+    }
+
+    &__text_none {
+      display: none;
+    }
   }
 }
 
@@ -350,15 +356,12 @@
     &_smallest-mobile {
       width: 60px;
     }
-
-    &__text_none {
-      display: none;
-    }
   }
 }
+
 @media screen and (max-width: 414px) {
   .button {
-    height: 40px;
+    min-height: 40px;
 
     &__text_margin {
       margin: 0;

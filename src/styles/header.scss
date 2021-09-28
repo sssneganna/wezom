@@ -1,12 +1,13 @@
 .global-header {
   background-color: var(--white-bg);
-  height: var(--header-height);
+  min-height: var(--header-height);
   width: 100%;
 }
 
 .header-content {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1470px;
+  padding: 0 15px;
 }
 
 .bottom-menu {
@@ -19,5 +20,10 @@
 @media screen and (max-width: 768px) {
   .global-header {
     height: 60px;
+    min-height: auto;
+  }
+
+  .header-content {
+    padding: 0;
   }
 }

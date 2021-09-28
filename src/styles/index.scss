@@ -4,7 +4,8 @@
   --footer-height: 60px;
   --header-height: 150px;
   --page-width: 1520px;
-  --page-width-table: 738px;
+  --page-width-tablet-pro: 994px;
+  --page-width-tablet: 738px;
   --page-width-mobile: 350px;
   --color-text: #33485d;
   --color-blue-smoke: #5c6d7d;
@@ -46,8 +47,9 @@ body {
     var(--white-bg) 99%
   );
   min-height: calc(100vh - 60px - 150px);
-  padding-top: 30px;
+
   width: 100%;
+  padding: 30px 10px 0 10px;
 }
 
 .title {
@@ -102,9 +104,23 @@ body {
   opacity: 0.8;
 }
 
+.in-stock {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: right;
+  color: #249755;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --page-width: var(--page-width-tablet-pro);
+  }
+}
+
 @media screen and (max-width: 768px) {
   :root {
-    --page-width: var(--page-width-table);
+    --page-width: var(--page-width-tablet);
   }
 
   .title {

@@ -9,9 +9,9 @@ export const createReviews = (root) => {
     container.innerHTML = `
      <div class="reviews__name-flex">
        <p class="reviews__name">${subjects[i].name} </p>
-       
       <div class="reviews__date">/ ${subjects[i].date}</div>
-      <div><svg class="reviews__icon">
+      <div class="star ">
+      <svg class="star__icon">
       <use xlink:href="./src/assets/sprite.svg#${subjects[i].rating}"></use>
     </svg></div>
       </div>

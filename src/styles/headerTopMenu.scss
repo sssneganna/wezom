@@ -7,21 +7,25 @@
   justify-content: space-between;
 }
 
-.flex {
+.menu-box {
   display: flex;
+  justify-content: space-between;
+  width: 725px;
+  flex-wrap: wrap;
 }
 
 .logo {
   text-decoration: none;
-
-  &_margin {
-    margin-right: 277px;
-  }
 }
 
 .menu {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+
+  &_margin {
+    margin-left: 15px;
+  }
 
   &__list {
     display: flex;
@@ -77,16 +81,24 @@
   display: flex;
   align-items: center;
 
-  &_text {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 120%;
-    color: var(--color-text);
+  &__phone {
+    width: 180px;
   }
 
-  &_text:hover {
-    opacity: 0.8;
+  &__language {
+    margin-right: 58px;
   }
+}
+
+.text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color-text);
+}
+
+.text:hover {
+  opacity: 0.8;
 }
 
 .language {
@@ -119,13 +131,9 @@
     z-index: 1;
     transform: translateY(-50%);
   }
-
-  &_margin {
-    margin-right: 58px;
-  }
 }
 
-.logIn {
+.log-in {
   &__btn {
     display: flex;
     align-items: center;
@@ -146,12 +154,10 @@
 }
 
 .phone {
+  display: flex;
+  flex-shrink: 0;
   &__link {
     text-decoration: none;
-  }
-
-  &_margin {
-    margin-right: 68px;
   }
 }
 
@@ -160,11 +166,14 @@
     padding: 10px;
     border-top: 1px solid var(--color-text-white);
   }
+
   .top-menu {
     display: none;
   }
+
   .menu {
     margin: 20px;
+
     &__list {
       flex-direction: column;
       align-items: start;
@@ -190,9 +199,12 @@
     }
   }
 
-  .info_text {
+  .text {
     color: var(--color-text-white);
     font-size: 12px;
+  }
+  .language_margin {
+    margin-right: 58px;
   }
 
   .language__link {
@@ -204,7 +216,7 @@
     background: var(--color-text-white);
   }
 
-  .logIn {
+  .log-in {
     &_mobile {
       padding: 10px;
       border-top: 1px solid var(--color-text-white);
@@ -225,7 +237,7 @@
 }
 
 @media screen and (max-width: 414px) {
-  .logIn {
+  .log-in {
     &_tablet {
       display: none;
     }

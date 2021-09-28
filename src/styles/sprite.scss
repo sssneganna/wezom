@@ -1,110 +1,95 @@
-.searchIcon {
+.form-search__icon {
   width: 18px;
   height: 18px;
   fill: var(--color-text);
 }
 
-.wezom_logo {
+.logo__icon {
   width: 114px;
   height: 41px;
   fill: var(--color-text);
 }
 
-.menuIcon {
+.global-nav__icon {
   width: 25.5px;
   height: 19.5px;
+  flex-shrink: 0;
 }
-.menuIcon:hover {
+.global-nav__icon:hover {
   opacity: 0.8;
 }
+
 .category {
   width: 34px;
   height: 34px;
   margin-right: 25px;
 }
-.icon-comparison,
-.icon-favorites,
-.icon-shop,
-.icon-shop-white {
+
+.button__icon,
+.icon-favorites {
   width: 30px;
   height: 25px;
 }
 
-.icon-phone {
+.button__icon_size {
   width: 40px;
   height: 40px;
 }
 
-.icon-comparison,
-.icon-favorites,
-.icon-shop,
-.icon-phone {
+.button__icon,
+.icon-favorites {
   fill: var(--color-text);
 }
 
-.icon-shop:active,
-.icon-shop:focus {
-  fill: var(--color-text-white);
-}
-.icon-comparison:active {
-  fill: var(--color-text-white);
-}
-.icon-favorites:active {
+.button__icon_white {
   fill: var(--color-text-white);
 }
 
-.icon-shop-white {
-  fill: var(--color-text-white);
-}
-
-.inStock {
+.in-stock__icon {
   width: 18.75px;
   height: 18.75px;
   margin-right: 10px;
 }
 
-.fourStars- {
+.four-stars-plus-one {
   width: 76px;
   height: 14px;
 }
 
-.oneStar {
+.one-star {
   width: 16px;
   height: 14px;
 }
 
-.warranty {
+.accordion__icon {
   width: 18px;
   height: 20px;
 }
 
-.reviews__icon {
+.star__icon {
   width: 95px;
   height: 14px;
 }
 
-.logIn_icon {
+.log-in__btn-icon {
   width: 20px;
   height: 20px;
   margin-left: 12px;
   margin-right: 9px;
   fill: #ffbe48;
 }
+
 @media screen and (max-width: 768px) {
-  .logIn_icon {
+  .log-in__btn-icon {
     fill: white;
   }
 
-  .icon-shop {
-    fill: white;
-  }
-
-  .searchIcon {
+  .form-search__icon {
     width: 12px;
     height: 12px;
   }
 
-  .wezom_logo {
+  .logo__icon {
     width: 80px;
     height: 50px;
     fill: var(--white-bg);
@@ -116,19 +101,18 @@
     margin-right: 25px;
   }
 }
-
-@media screen and (max-width: 414px) {
-  .icon-phone {
+@media screen and (max-width: 580px) {
+  .button__icon_size {
     display: none;
   }
-
-  .icon-comparison,
-  .icon-favorites {
+}
+@media screen and (max-width: 414px) {
+  .button__icon {
     width: 20px;
     height: 15px;
   }
 
-  .reviews__icon {
+  .star__icon {
     width: 75px;
     height: 10px;
   }

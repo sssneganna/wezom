@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -21,14 +21,14 @@
     <header class="global-header">
         <div class="header-content">
             <div class="top-menu">
-                <div class="flex">
-                    <a class="logo logo_margin" href="https://wezom.com.ua">
-                        <svg class="wezom_logo">
+                <div class="menu-box">
+                    <a class="logo" target="blank" href="https://wezom.com.ua">
+                        <svg class="logo__icon">
                             <use xlink:href="./src/assets/sprite.svg#wezom_logo"></use>
                         </svg>
                     </a>
-                    <div class="menu">
-                        <ul class="menu__list" id="menu">
+                    <div class="menu menu_margin">
+                        <ul class="menu__list js-active">
                             <li class="menu__item">
                                 <a class="menu__link" href="#">О Компании</a>
                             </li>
@@ -42,174 +42,102 @@
                     </div>
                 </div>
                 <div class="info">
-                    <div class="phone phone_margin">
-                        <a class="phone__link info_text" href="tel: +38 068 000 00 00">
+                    <div class="phone info__phone">
+                        <a class="phone__link text" href="tel: +38 068 000 00 00">
                             <span>+38 068 000 00 00</span>
                         </a>
                     </div>
-                    <div class="language language_margin" id="lan">
-                        <a class="language__link  info_text" href="#">Ua</a>
-                        <a class="language__link info_text" href="#">Ru</a>
+                    <div class="language info__language">
+                        <a class="language__link  text" href="#">Ua</a>
+                        <a class="language__link text" href="#">Ru</a>
                     </div>
-                    <div class="logIn">
-                        <button class="logIn__btn info_text">
+                    <div class="log-in">
+                        <button class="log-in__btn text">
                             Войти
-                            <svg class="logIn_icon">
+                            <svg class="log-in__btn-icon">
                                 <use xlink:href="./src/assets/sprite.svg#logIn"></use>
                             </svg>
                         </button>
                     </div>
-
                 </div>
             </div>
-
             <div class="bottom-menu">
-                <div class="navigation">
-                    <nav class="global-nav">
+                <nav class="global-nav js-nav-fixed">
 
-                        <div class="global-nav__open-window">
-
-                            <div class="global-nav__mobile-menu">
-                                <a class="logo" href="https://wezom.com.ua">
-                                    <svg class="wezom_logo">
-                                        <use xlink:href="./src/assets/sprite.svg#wezom_logo"></use>
-                                    </svg>
-                                </a>
-                                <button class="global-nav__toggle-close"></button>
-                                <div class="language language_margin language_mobile" id="lan">
-                                    <a class="language__link  info_text" href="#">Ua</a>
-                                    <a class="language__link info_text" href="#">Ru</a>
-                                </div>
-
-                                <div class="logIn logIn_mobile">
-                                    <button class="logIn__btn info_text">
-                                        Войти
-                                        <svg class="logIn_icon">
-                                            <use xlink:href="./src/assets/sprite.svg#logIn"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-
-
-
-                                <div class="menu">
-                                    <ul class="menu__list" id="menu">
-                                        <li class="menu__item">
-                                            <a class="menu__link" href="#">О Компании</a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a class="menu__link" href="#">Доставка и оплата</a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a class="menu__link" href="#">Гарантия</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="phone">
-                                    <a class="phone__link info_text" href="tel: +38 068 000 00 00">
-                                        <span>+38 068 000 00 00</span>
-                                    </a>
-                                </div>
-
+                    <button class="global-nav__toggle js-nav-toggle">
+                        <svg class="global-nav__icon">
+                            <use xlink:href="./src/assets/sprite.svg#menuIcon"></use>
+                        </svg>
+                        <span class="global-nav__title">каталог</span>
+                    </button>
+                    <a class="global-nav__category-link" href="#">Все категории
+                    </a>
+                    <div class="global-nav__open-window">
+                        <div class="global-nav__mobile-menu">
+                            <a class="logo" href="https://wezom.com.ua">
+                                <svg class="logo__icon">
+                                    <use xlink:href="./src/assets/sprite.svg#wezom_logo"></use>
+                                </svg>
+                            </a>
+                            <button class="global-nav__toggle-close js-nav-toggle-close"></button>
+                            <div class="language language_margin language_mobile">
+                                <a class="language__link  text" href="#">Ua</a>
+                                <a class="language__link text" href="#">Ru</a>
                             </div>
-                            <ul class="global-nav__list" id="nav"></ul>
-
-                        </div>
-                        <button class="global-nav__toggle">
-                            <svg class="menuIcon">
-                                <use xlink:href="./src/assets/sprite.svg#menuIcon"></use>
-                            </svg>
-                            <span class="global-nav__title">каталог</span>
-                        </button>
-                        <a class="global-nav__category-link" href="#">Все категории
-                        </a>
-
-                        <form class="form-search form-search_tablet">
-                            <div class="form-search__field">
-                                <input class="form-search__input" name="search" type="text" required
-                                    placeholder="Поиск, например “тест”" />
-                                <button class="form-search__btn" type="submit">
-                                    <svg class="searchIcon">
-                                        <use xlink:href="./src/assets/sprite.svg#searchIcon"></use>
+                            <div class="log-in log-in_mobile">
+                                <button class="log-in__btn text">
+                                    Войти
+                                    <svg class="log-in__btn-icon">
+                                        <use xlink:href="./src/assets/sprite.svg#logIn"></use>
                                     </svg>
                                 </button>
                             </div>
-                        </form>
-                        <div class="logIn logIn_tablet">
-                            <button class="logIn__btn info_text">
-                                <span class="logIn_tablet-text">Войти</span>
-                                <svg class="logIn_icon">
-                                    <use xlink:href="./src/assets/sprite.svg#logIn"></use>
+                            <div class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">О Компании</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Доставка и оплата</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Гарантия</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="phone">
+                                <a class="phone__link text" href="tel: +38 068 000 00 00">
+                                    <span>+38 068 000 00 00</span>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="global-nav__list" id="nav"></ul>
+                    </div>
+                    <form class="form-search form-search_tablet">
+                        <div class="form-search__field">
+                            <input class="form-search__input" name="search" type="text" required
+                                placeholder="Поиск, например “тест”" />
+                            <button class="form-search__btn" type="submit">
+                                <svg class="form-search__icon">
+                                    <use xlink:href="./src/assets/sprite.svg#searchIcon"></use>
                                 </svg>
                             </button>
                         </div>
-                        <div class="basket-open">
-                            <button
-                                class="basket__btn button button_smallest button_top-radius button_transparent button_tablet">
-                                <span class="button__content">
-                                    <span class="basket__number">3</span>
-                                    <svg class="icon-shop">
-                                        <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
-                                    </svg>
-                                </span>
-                            </button>
-                            <div class="window">
-                                <div class="window__text">В корзине <span class="window__text-bold">3
-                                        товара</span> На
-                                    сумму <span class="window__text-bold">30 000 ₴</span></div>
-                                <button
-                                    class="button button_bright-filled button_biggest button_double-radius button_alignment-center">
-                                    <span class="button__content button__content_space-between">
-                                        <span class="button__text button__text_large button__text_white">Оформить
-                                            заказ</span>
-                                        <svg class="icon-shop-white">
-                                            <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
-                                        </svg>
-                                    </span>
-                                </button>
-                                <a href="#" class="window__link">Редактировать заказ</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-                <form class="form-search">
-                    <div class="form-search__field">
-                        <input class="form-search__input" name="search" type="text" required
-                            placeholder="Поиск, например “тест”" />
-                        <button class="form-search__btn" type="submit">
-                            <svg class="searchIcon">
-                                <use xlink:href="./src/assets/sprite.svg#searchIcon"></use>
+                    </form>
+                    <div class="log-in log-in_tablet">
+                        <button class="log-in__btn text">
+                            <span class="log-in_tablet-text">Войти</span>
+                            <svg class="log-in__btn-icon">
+                                <use xlink:href="./src/assets/sprite.svg#logIn"></use>
                             </svg>
                         </button>
                     </div>
-                </form>
-                <div class="buttons">
-                    <button class="button button_smallest button_bordered button_transparent comparison">
-                        <span class="button__content">
-                            <svg class="icon-comparison">
-                                <use xlink:href="./src/assets/sprite.svg#comparison"></use>
-                            </svg>
-                        </span>
-
-                    </button>
-
-
-                    <button class="button button_smallest button_bordered button_transparent favorites">
-                        <span class="button__content">
-                            <svg class="icon-favorites">
-                                <use xlink:href="./src/assets/sprite.svg#favorites"></use>
-                            </svg>
-                        </span>
-
-                    </button>
-
-
-                    <div class="basket">
-
-                        <button class="basket__btn button button_smallest button_top-radius button_transparent">
+                    <div class="basket-open">
+                        <button
+                            class="basket__btn js-basket-btn button button_smallest button_top-radius button_transparent button_tablet">
                             <span class="button__content">
                                 <span class="basket__number">3</span>
-                                <svg class="icon-shop">
+                                <svg class="button__icon button__icon_white">
                                     <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
                                 </svg>
                             </span>
@@ -223,7 +151,7 @@
                                 <span class="button__content button__content_space-between">
                                     <span class="button__text button__text_large button__text_white">Оформить
                                         заказ</span>
-                                    <svg class="icon-shop-white">
+                                    <svg class="button__icon button__icon_white">
                                         <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
                                     </svg>
                                 </span>
@@ -231,7 +159,60 @@
                             <a href="#" class="window__link">Редактировать заказ</a>
                         </div>
                     </div>
-
+                </nav>
+                <form class="form-search">
+                    <div class="form-search__field">
+                        <input class="form-search__input" name="search" type="text" required
+                            placeholder="Поиск, например “тест”" />
+                        <button class="form-search__btn" type="submit">
+                            <svg class="form-search__icon">
+                                <use xlink:href="./src/assets/sprite.svg#searchIcon"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="buttons">
+                    <button class="button button_smallest button_bordered button_transparent comparison">
+                        <span class="button__content">
+                            <svg class="button__icon">
+                                <use xlink:href="./src/assets/sprite.svg#comparison"></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="button button_smallest button_bordered button_transparent favorites">
+                        <span class="button__content">
+                            <svg class="button__icon">
+                                <use xlink:href="./src/assets/sprite.svg#favorites"></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="basket">
+                        <button
+                            class="basket__btn js-basket-btn button button_smallest button_top-radius button_transparent">
+                            <span class="button__content">
+                                <span class="basket__number">3</span>
+                                <svg class="button__icon">
+                                    <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="window">
+                            <div class="window__text">В корзине <span class="window__text-bold">3
+                                    товара</span> На
+                                сумму <span class="window__text-bold">30 000 ₴</span></div>
+                            <button
+                                class="button button_bright-filled button_biggest button_double-radius button_alignment-center">
+                                <span class="button__content button__content_space-between">
+                                    <span class="button__text button__text_large button__text_white">Оформить
+                                        заказ</span>
+                                    <svg class="button__icon button__icon_white">
+                                        <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <a href="#" class="window__link">Редактировать заказ</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,15 +223,10 @@
                 <div class="left-section">
                     <section class="slider-section">
                         <h2 class="slider-title">Test — Каталог — Группа — Тестовый товар для верстки</h2>
-
-
                         <div class="slider-container">
-
-
-                            <button class="slider-next" id="slider-next"></button>
-                            <button class="slider-prev" id="slider-prev"></button>
-                            <ul class="slider-nav">
-
+                            <button class="slider-next js-btn-next"></button>
+                            <button class="slider-prev js-btn-prev"></button>
+                            <ul class="slider-nav js-slider-nav">
                                 <li class="slider-nav__item">
                                     <img class="slider-nav__image" src="./src/assets/image1small.jpg" alt="image1">
                                 </li>
@@ -263,11 +239,8 @@
                                 <li class="slider-nav__item">
                                     <img class="slider-nav__image" src="./src/assets/image3.jpg" alt="image1">
                                 </li>
-
                             </ul>
-
-                            <ul class="slider">
-
+                            <ul class="slider js-slider">
                                 <li class="slider__item">
                                     <img class="slider__image" src="./src/assets/image1.jpg" alt="image1">
                                 </li>
@@ -283,9 +256,7 @@
                                 <li class="slider__item">
                                     <img class="slider__image" src="./src/assets/image1.jpg" alt="image1">
                                 </li>
-
                             </ul>
-
                         </div>
                     </section>
                     <section class="characteristic">
@@ -315,23 +286,23 @@
                         </div>
                     </section>
                 </div>
+
                 <div class="right-section">
                     <div class="buy-section">
                         <div class="buy-info">
                             <div class="buy-info__flex">
-                                <div class="buy-info__in-stock">
-                                    <svg class="inStock">
+                                <div class=" in-stock buy-info__in-stock">
+                                    <svg class="in-stock__icon">
                                         <use xlink:href="./src/assets/sprite.svg#inStock"></use>
                                     </svg>В наличии
                                 </div>
                                 <div class="buy-info__stars">
-                                    <svg class="fourStars-">
+                                    <svg class="four-stars-plus-one">
                                         <use xlink:href="./src/assets/sprite.svg#fourStars-"></use>
                                     </svg>
-                                    <svg class="oneStar">
+                                    <svg class="one-star">
                                         <use xlink:href="./src/assets/sprite.svg#oneStar"></use>
                                     </svg>
-
                                 </div>
                                 <span class="buy-info__number">12</span>
                             </div>
@@ -354,7 +325,7 @@
                                             class="button__text button__text_large button__text_none button__text_white">В
                                             корзину</span>
                                         <span>
-                                            <svg class="icon-shop-white">
+                                            <svg class="button__icon button__icon_white">
                                                 <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
                                             </svg></span>
                                     </span>
@@ -363,26 +334,22 @@
                                     <button
                                         class="button button_smallest button_smallest-mobile button_bordered button_transparent">
                                         <span class="button__content">
-                                            <svg class="icon-comparison">
+                                            <svg class="button__icon">
                                                 <use xlink:href="./src/assets/sprite.svg#comparison"></use>
                                             </svg>
                                         </span>
-
                                     </button>
-
-
                                     <button class="button button_smallest button_smallest-mobile button_transparent">
                                         <span class="button__content">
-                                            <svg class="icon-favorites">
+                                            <svg class="button__icon">
                                                 <use xlink:href="./src/assets/sprite.svg#favorites"></use>
                                             </svg>
                                         </span>
-
                                     </button>
                                     <button
                                         class="button button_transparent button_medium button_alignment-right button_bottom-radius">
                                         <span class="button__content">
-                                            <svg class="icon-phone">
+                                            <svg class=" button__icon button__icon_size">
                                                 <use xlink:href="./src/assets/sprite.svg#phone"></use>
                                             </svg>
                                             <span
@@ -396,18 +363,16 @@
                         </div>
                     </div>
                     <div class="accordion">
-                        <div class="accordion__item" data-collapse="#wedo_1">
+                        <div class="accordion__item" data-collapse="#accordion_1">
                             <div class="accordion__header">
-                                <span class="accordion__icon">
-                                    <svg class="warranty">
-                                        <use xlink:href="./src/assets/sprite.svg#warranty"></use>
-                                    </svg>
-                                </span>
-                                <button class="accordion__title">
+                                <svg class="accordion__icon accordion__icon_margin">
+                                    <use xlink:href="./src/assets/sprite.svg#warranty"></use>
+                                </svg>
 
+                                <button class="accordion__title">
                                     Гарантия</button>
                             </div>
-                            <div class="accordion__content" id="wedo_1">
+                            <div class="accordion__content" id="accordion_1">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et
                                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -417,20 +382,16 @@
                                     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in</p>
                             </div>
                         </div>
-                        <div class="accordion__item " data-collapse="#wedo_2">
+                        <div class="accordion__item " data-collapse="#accordion_2">
                             <div class="accordion__header">
-                                <span class="accordion__icon">
-                                    <svg class="warranty">
-                                        <use xlink:href="./src/assets/sprite.svg#deliveryTerms"></use>
-                                    </svg>
+                                <svg class="accordion__icon accordion__icon_margin">
+                                    <use xlink:href="./src/assets/sprite.svg#deliveryTerms"></use>
+                                </svg>
 
-                                </span>
                                 <button class="accordion__title">
-
-
                                     Условия доставки</button>
                             </div>
-                            <div class="accordion__content" id="wedo_2">
+                            <div class="accordion__content" id="accordion_2">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et
                                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -440,18 +401,17 @@
                                     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in</p>
                             </div>
                         </div>
-                        <div class="accordion__item" data-collapse="#wedo_3">
+                        <div class="accordion__item" data-collapse="#accordion_3">
                             <div class="accordion__header">
-                                <span class="accordion__icon">
-                                    <svg class="warranty">
-                                        <use xlink:href="./src/assets/sprite.svg#terms-of-payment"></use>
-                                    </svg>
-                                </span>
-                                <button class="accordion__title">
 
+                                <svg class="accordion__icon accordion__icon_margin">
+                                    <use xlink:href="./src/assets/sprite.svg#terms-of-payment"></use>
+                                </svg>
+
+                                <button class="accordion__title">
                                     Условия оплаты</button>
                             </div>
-                            <div class="accordion__content" id="wedo_3">
+                            <div class="accordion__content" id="accordion_3">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et
                                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -467,16 +427,14 @@
                             <h2 class="title">Отзывы покупателей <span class="title_green">12</span></h2>
                             <div class="link link_margin">
                                 <a class="link__text" href="#">Все отзывы
-
                                 </a>
                                 <button class="link__btn"></button>
                             </div>
                         </div>
                         <ul class="reviews" id="reviews">
-
                         </ul>
                         <button
-                            class=" reviews__btn-showmore button button_small button_transparent button_double-radius">
+                            class="reviews__btn-showmore button button_small button_transparent button_double-radius js-btn-showmore">
                             <span class="button__content">
                                 <span class="button__text button__text_small button__text_grey">Показать
                                     еще</span></span>
@@ -488,9 +446,9 @@
                 <h2 class="product__title title">
                     <span>Тестовые товары</span>
                 </h2>
-                <button class="slider-next" id="slider-next-product"></button>
-                <button class="slider-prev" id="slider-prev-product"></button>
-                <ul class="product__list">
+                <button class="slider-next js-btn-next-product"></button>
+                <button class="slider-prev js-btn-prev-product"></button>
+                <ul class="product__list js-slider-product">
                 </ul>
             </section>
             <section class="phone-field">
@@ -502,7 +460,6 @@
                         Отправить
                     </button>
                 </form>
-
             </section>
         </div>
     </main>
@@ -513,15 +470,11 @@
         </div>
     </footer>
 
-
     <script src="./dist/main.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/js.js"></script>
     <script src="./src/slick/slick.min.js"></script>
     <script src="./js/jquery.mask.js"></script>
-
-
-
 </body>
 
 </html>

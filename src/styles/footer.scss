@@ -6,13 +6,15 @@
 }
 
 .footer-content {
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
   color: var(--color-text-white);
   opacity: 0.5;
   font-family: Roboto;
-  max-width: 1440px;
+  max-width: 1460px;
+  width: 100%;
   margin: 0 auto;
   height: var(--footer-height);
   align-items: center;

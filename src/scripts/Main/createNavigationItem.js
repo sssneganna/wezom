@@ -8,7 +8,7 @@ export const createNavigationItem = (root) => {
     navigationItem.classList.add("global-nav__item");
     navigationItem.innerHTML = `
       <a href="#" class="global-nav__link">
-      <span class="global-nav__icon">
+      <span class="global-nav__icon-category">
       <svg class="category">
       <use xlink:href="./src/assets/sprite.svg#category-${cat[i].icon}"></use>
     </svg>

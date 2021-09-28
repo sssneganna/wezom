@@ -161,6 +161,10 @@
   }
 }
 
+.flex-box {
+  display: flex;
+}
+
 .global-nav_opened .global-nav__open-window {
   transform: scaleY(1);
 }

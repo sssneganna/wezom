@@ -9,12 +9,11 @@ export const createProductItem = (root) => {
     <a class="product__link" href="#">
   <div class="product__top-info">
         <div class="product__top">${images[i].top}</div>
-        <div class="product__like">  <svg class="icon-favorites">
+        <div class="product__like">  
+        <svg class="icon-favorites">
         <use xlink:href="./src/assets/sprite.svg#favorites"></use>
       </svg></div>
           
-
-       
         </div>
         <img class="product__img" src="${images[i].url}" alt="a"/>
         <div class="product__info">

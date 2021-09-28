@@ -124,39 +124,41 @@
                             </button>
                         </div>
                     </form>
-                    <div class="log-in log-in_tablet">
-                        <button class="log-in__btn text">
-                            <span class="log-in_tablet-text">Войти</span>
-                            <svg class="log-in__btn-icon">
-                                <use xlink:href="./src/assets/sprite.svg#logIn"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="basket-open">
-                        <button
-                            class="basket__btn js-basket-btn button button_smallest button_top-radius button_transparent button_tablet">
-                            <span class="button__content">
-                                <span class="basket__number">3</span>
-                                <svg class="button__icon button__icon_white">
-                                    <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
+                    <div class="flex-box">
+                        <div class="log-in log-in_tablet">
+                            <button class="log-in__btn text">
+                                <span class="log-in_tablet-text">Войти</span>
+                                <svg class="log-in__btn-icon log-in__btn-icon_size-biggest">
+                                    <use xlink:href="./src/assets/sprite.svg#logIn"></use>
                                 </svg>
-                            </span>
-                        </button>
-                        <div class="window">
-                            <div class="window__text">В корзине <span class="window__text-bold">3
-                                    товара</span> На
-                                сумму <span class="window__text-bold">30 000 ₴</span></div>
+                            </button>
+                        </div>
+                        <div class="basket-open">
                             <button
-                                class="button button_bright-filled button_biggest button_double-radius button_alignment-center">
-                                <span class="button__content button__content_space-between">
-                                    <span class="button__text button__text_large button__text_white">Оформить
-                                        заказ</span>
-                                    <svg class="button__icon button__icon_white">
+                                class="basket__btn js-basket-btn button button_smallest button_top-radius button_transparent button_tablet">
+                                <span class="button__content">
+                                    <span class="basket__number">3</span>
+                                    <svg class="button__icon button__icon_white button__icon_size-medium">
                                         <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
                                     </svg>
                                 </span>
                             </button>
-                            <a href="#" class="window__link">Редактировать заказ</a>
+                            <div class="window">
+                                <div class="window__text">В корзине <span class="window__text-bold">3
+                                        товара</span> На
+                                    сумму <span class="window__text-bold">30 000 ₴</span></div>
+                                <button
+                                    class="button button_bright-filled button_biggest button_double-radius button_alignment-center">
+                                    <span class="button__content button__content_space-between">
+                                        <span class="button__text button__text_large button__text_white">Оформить
+                                            заказ</span>
+                                        <svg class="button__icon button__icon_white button__icon_size-medium ">
+                                            <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <a href="#" class="window__link">Редактировать заказ</a>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -174,14 +176,14 @@
                 <div class="buttons">
                     <button class="button button_smallest button_bordered button_transparent comparison">
                         <span class="button__content">
-                            <svg class="button__icon">
+                            <svg class="button__icon button__icon_size-small">
                                 <use xlink:href="./src/assets/sprite.svg#comparison"></use>
                             </svg>
                         </span>
                     </button>
                     <button class="button button_smallest button_bordered button_transparent favorites">
                         <span class="button__content">
-                            <svg class="button__icon">
+                            <svg class="button__icon button__icon_size-small">
                                 <use xlink:href="./src/assets/sprite.svg#favorites"></use>
                             </svg>
                         </span>
@@ -191,7 +193,7 @@
                             class="basket__btn js-basket-btn button button_smallest button_top-radius button_transparent">
                             <span class="button__content">
                                 <span class="basket__number">3</span>
-                                <svg class="button__icon">
+                                <svg class="button__icon button__icon_size-medium ">
                                     <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
                                 </svg>
                             </span>
@@ -205,7 +207,7 @@
                                 <span class="button__content button__content_space-between">
                                     <span class="button__text button__text_large button__text_white">Оформить
                                         заказ</span>
-                                    <svg class="button__icon button__icon_white">
+                                    <svg class="button__icon button__icon_white button__icon_size-medium">
                                         <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
                                     </svg>
                                 </span>
@@ -325,7 +327,7 @@
                                             class="button__text button__text_large button__text_none button__text_white">В
                                             корзину</span>
                                         <span>
-                                            <svg class="button__icon button__icon_white">
+                                            <svg class="button__icon button__icon_white button__icon_size-medium button__icon_size-mobile">
                                                 <use xlink:href="./src/assets/sprite.svg#shopping-cart"></use>
                                             </svg></span>
                                     </span>
@@ -334,14 +336,14 @@
                                     <button
                                         class="button button_smallest button_smallest-mobile button_bordered button_transparent">
                                         <span class="button__content">
-                                            <svg class="button__icon">
+                                            <svg class="button__icon button__icon_size-small">
                                                 <use xlink:href="./src/assets/sprite.svg#comparison"></use>
                                             </svg>
                                         </span>
                                     </button>
                                     <button class="button button_smallest button_smallest-mobile button_transparent">
                                         <span class="button__content">
-                                            <svg class="button__icon">
+                                            <svg class="button__icon button__icon_size-small">
                                                 <use xlink:href="./src/assets/sprite.svg#favorites"></use>
                                             </svg>
                                         </span>
@@ -349,7 +351,7 @@
                                     <button
                                         class="button button_transparent button_medium button_alignment-right button_bottom-radius">
                                         <span class="button__content">
-                                            <svg class=" button__icon button__icon_size">
+                                            <svg class="button__icon button__icon_size-biggest">
                                                 <use xlink:href="./src/assets/sprite.svg#phone"></use>
                                             </svg>
                                             <span

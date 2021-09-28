@@ -224,10 +224,7 @@
     }
 
     &_tablet {
-      display: block;
-      position: absolute;
-      right: 65px;
-      top: 16px;
+      display: flex;
     }
 
     &_tablet-text {

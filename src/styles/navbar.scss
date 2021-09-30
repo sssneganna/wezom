@@ -1,7 +1,6 @@
 .global-nav {
   position: relative;
   display: flex;
-
   margin-right: 15px;
   background: #ffbe48;
   border: 2px solid #ffbe48;
@@ -162,17 +161,17 @@
 }
 
 .flex-box {
-  display: flex;
+  display: none;
 }
 
 .global-nav_opened .global-nav__open-window {
   transform: scaleY(1);
 }
 
-@media screen and (min-width: 1025px) {
-}
-
 @media screen and (max-width: 768px) {
+  .flex-box {
+    display: flex;
+  }
   .global-nav {
     width: 100vw;
     height: 60px;

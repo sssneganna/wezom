@@ -8,19 +8,28 @@ $(function () {
     }
   });
 
+  function openWindow() {
+    $(".global-nav").toggleClass("global-nav_opened");
+  }
+
+  $(".js-toggle-open").on("click", function (event) {
+    event.preventDefault();
+    openWindow();
+  });
+
   $(window).on("resize", function () {
-    if (window.matchMedia("(max-width: 769px)").matches) {
-      mobileOnlySlider();
+    if ($(window).width() < 769) {
+      mobileSlider();
     } else {
       $(".js-slider-product").slick("unslick");
     }
   });
 
-  if (window.innerWidth < 769) {
-    mobileOnlySlider();
-  }
+  /*if (window.innerWidth < 769) {
+    mobileSlider();
+  }*/
 
-  function mobileOnlySlider() {
+  function mobileSlider() {
     $(".js-slider-product").slick({
       swipeToSlide: true,
       slidesToShow: 2,
@@ -41,38 +50,16 @@ $(function () {
     });
   }
 
-  $(".js-nav-toggle").on("click", function (event) {
-    event.preventDefault();
-    $(".global-nav").toggleClass("global-nav_opened");
+  $(".js-active").on("click", "a", function (e) {
+    let target = $(this);
+    $(e.delegateTarget).find(".active").removeClass("active");
+    target.addClass("active");
   });
 
-  $(".js-nav-toggle-close").on("click", function (event) {
-    event.preventDefault();
-    $(".global-nav").toggleClass("global-nav_opened");
-  });
-
-  function addActiveClass(t) {
-    $(t).toggleClass("active");
-  }
-
-  $(".js-active").on("click", function (event) {
-    let target = event.target.closest("a");
-    if (!target) return;
-    addActiveClass(target);
-  });
-
-  $(".language__link").on("click", function () {
-    let $this = $(this);
-
-    $this.addClass("active");
-    $(".language__link").not(this).removeClass("active");
-  });
-
-  $(".slider-nav__item").on("click", function () {
-    let $this = $(this);
-
-    $this.addClass("active");
-    $(".slider-nav__item").not(this).removeClass("active");
+  $(".js-active-nav-slider").on("click", "li", function (e) {
+    let target = $(this);
+    $(e.delegateTarget).find(".active").removeClass("active");
+    target.addClass("active");
   });
 
   $(".js-basket-btn").on("click", function (event) {

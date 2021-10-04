@@ -12,9 +12,20 @@ $(function () {
     $(".global-nav").toggleClass("global-nav_opened");
   }
 
+  function closeWindow() {
+    $(".global-nav").removeClass("global-nav_opened");
+  }
+
   $(".js-toggle-open").on("click", function (event) {
     event.preventDefault();
     openWindow();
+  });
+
+  $(document).on("click", function (e) {
+    let btn = $(".js-toggle-open");
+    if (!btn.is(e.target) && btn.has(e.target).length === 0) {
+      closeWindow();
+    }
   });
 
   $(window).on("resize", function () {
@@ -50,17 +61,18 @@ $(function () {
     });
   }
 
-  $(".js-active").on("click", "a", function (e) {
+  $(".js-active").on("click", "a", "li", function (e) {
     let target = $(this);
+    console.log(e.delegateTarget);
     $(e.delegateTarget).find(".active").removeClass("active");
     target.addClass("active");
   });
 
-  $(".js-active-nav-slider").on("click", "li", function (e) {
+  /* $(".js-active-nav-slider").on("click", "li", function (e) {
     let target = $(this);
     $(e.delegateTarget).find(".active").removeClass("active");
     target.addClass("active");
-  });
+  });*/
 
   $(".js-basket-btn").on("click", function (event) {
     event.preventDefault();
